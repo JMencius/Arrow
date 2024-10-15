@@ -1,0 +1,60 @@
+﻿#,Common name (NCBI taxonomy browser),Species name,Flowcell generation,Flowcell type (FLO-),Sequencing kit (SQK-),DNA type,Source,Download link / Database ID,File format,Sampling rate
+1,Human,Homo sapiens,R10,PRO114M,LSK114,gDNA1,Genome in a Bottle Consortium : HG004,s3://ont-open-data/giab_lsk114_2022.12/flowcells/hg004,FAST5,4 kHz
+2,Human,Homo sapiens,R10,PRO114M,LSK114,gDNA,Genome in a Bottle Consortium : HG002 5 kHz,s3://ont-open-data/giab_2023.05/flowcells/hg002/,POD5,5 kHz
+3,Zebrafish,Danio rerio,R10,MIN114,LSK114,gDNA,Vertebrate Genome Project,s3://genomeark/species/Danio_rerio/fDanRer17/genomic_data/ont/fast5/PAG65805,FAST5,4 kHz
+4,Fruit fly,Drosophila melanogaster,R10,MIN114,LSK114,gDNA,Oxford Nanopore Open Data Project,s3://ont-open-data/contrib/melanogaster_bkim_2023.01/flowcells/D.melanogaster.R1041.400bps/,FAST5,4 kHz
+5,Thale cress,Arabidopsis thaliana,R10,MIN112,LSK112,gDNA,SRA database,ERR7919757,FAST5,4 kHz
+6,E. coli,Escherichia coli,R10,MIN112,LSK112,gDNA,SRA database,ERR9127552,FAST5,4 kHz
+7,Human,Homo sapiens,R9,PRO002,LSK109,gDNA,Human Pangenome Consortium Year 1: HG02723,s3://human-pangenomics/NHGRI_UCSC_panel/HG02723/nanopore,FAST5,4 kHz
+8,House mouse,Mus musculus,R9,PRO002,LSK109,gDNA,SRA database,SRR15959871,FAST5,4 kHz
+9,Fruitfly,Drosophila melanogaster,R9,MIN106,LSK109,gDNA,"Paper ""Highly contiguous assemblies of 101 drosophilid genomes""",Upon reasonable request to the paper corresponding author,FAST5,4 kHz
+10,Thale cress,Arabidopsis thaliana,R9,PRO002,LSK109,gDNA,SRA database,SRR16149191,FAST5,4 kHz
+11,Brewer's yeast,Saccharomyces cerevisiae,R9,MIN106,LSK109,gDNA,SRA database,SRR14729830,FAST5,4 kHz
+12,E. coli,Escherichia coli,R9,MIN106,PBK004,gDNA,Zenodo database,record 7388709,FAST5,4 kHz
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,

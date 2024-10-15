@@ -1,0 +1,3 @@
+Current working directory is /public/share/mzj22/ONT_ML/SRA_status/data/SRA_XML/xml
+Total target SRA run number : 683891
+Mapped count : 210086

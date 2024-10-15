@@ -1,0 +1,79 @@
+##fileformat=VCFv4.2
+##source=Clair3
+##clair3_version=1.0.10
+##cmdline=/home/mzj22/miniconda3/envs/artex/bin/run_clair3.sh --bam_fn=/home/mzj22/dev/artex/test_data/ERR5398250/ERR5398250_longbow.sorted.bam --ref_fn=/home/mzj22/dev/artex/ref/nCoV-2019/V3/nCoV-2019.reference.fasta --threads=12 --platform=ont --model_path=/home/mzj22/dev/artex/clair3_model/r941_prom_hac_g360+g422 --output=clair3 --include_all_ctgs --no_phasing_for_fa --chunk_size=2000 --haploid_sensitive --min_coverage=10
+##reference=/home/mzj22/dev/artex/ref/nCoV-2019/V3/nCoV-2019.reference.fasta
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=MN908947.3,length=29903>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+MN908947.3	25922	.	G	.	25.24	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:66:52:0.7879
+MN908947.3	25963	.	G	.	28.96	RefCall	P	GT:GQ:DP:AD:AF	0/0:28:66:54:0.8182
+MN908947.3	25997	.	T	.	25.28	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:24:21:0.8750
+MN908947.3	25998	.	A	.	24.45	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:21:0.8750
+MN908947.3	25999	.	T	.	19.91	RefCall	P	GT:GQ:DP:AD:AF	0/0:19:24:18:0.7500
+MN908947.3	26003	.	A	.	22.98	RefCall	P	GT:GQ:DP:AD:AF	0/0:22:24:22:0.9167
+MN908947.3	26012	.	T	.	24.65	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:22:0.9167
+MN908947.3	26014	.	A	.	19.68	RefCall	P	GT:GQ:DP:AD:AF	0/0:19:24:19:0.7917
+MN908947.3	26019	.	A	.	22.16	RefCall	P	GT:GQ:DP:AD:AF	0/0:22:24:21:0.8750
+MN908947.3	26022	.	C	.	20.85	RefCall	P	GT:GQ:DP:AD:AF	0/0:20:24:20:0.8333
+MN908947.3	26035	.	T	.	27.66	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:24:19:0.7917
+MN908947.3	26041	.	A	.	22.68	RefCall	P	GT:GQ:DP:AD:AF	0/0:22:24:21:0.8750
+MN908947.3	26047	.	T	.	21.34	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:24:21:0.8750
+MN908947.3	26060	.	C	.	21.60	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:24:20:0.8333
+MN908947.3	26062	.	G	.	21.38	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:24:18:0.7500
+MN908947.3	26063	.	G	.	26.96	RefCall	P	GT:GQ:DP:AD:AF	0/0:26:24:22:0.9167
+MN908947.3	26071	.	C	.	18.27	RefCall	P	GT:GQ:DP:AD:AF	0/0:18:24:19:0.7917
+MN908947.3	26073	.	T	.	21.34	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:24:19:0.7917
+MN908947.3	26074	.	G	.	27.77	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:24:19:0.7917
+MN908947.3	26111	.	C	.	27.84	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:24:21:0.8750
+MN908947.3	26113	.	G	.	24.66	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:19:0.7917
+MN908947.3	26130	.	T	.	24.04	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:19:0.7917
+MN908947.3	26132	.	A	.	22.38	RefCall	P	GT:GQ:DP:AD:AF	0/0:22:24:17:0.7083
+MN908947.3	26133	.	C	.	26.29	RefCall	P	GT:GQ:DP:AD:AF	0/0:26:24:18:0.7500
+MN908947.3	26134	.	A	.	26.19	RefCall	P	GT:GQ:DP:AD:AF	0/0:26:24:22:0.9167
+MN908947.3	26135	.	C	.	24.78	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:18:0.7500
+MN908947.3	26138	.	T	.	24.40	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:22:0.9167
+MN908947.3	26139	.	C	.	25.20	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:24:21:0.8750
+MN908947.3	26146	.	T	.	27.16	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:24:21:0.8750
+MN908947.3	26147	.	C	.	24.21	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:24:20:0.8333
+MN908947.3	26192	.	C	.	23.42	RefCall	P	GT:GQ:DP:AD:AF	0/0:23:24:20:0.8333
+MN908947.3	26299	.	C	.	29.34	RefCall	P	GT:GQ:DP:AD:AF	0/0:29:161:100:0.6211
+MN908947.3	26350	.	G	.	24.56	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:139:110:0.7914
+MN908947.3	26373	.	C	.	26.95	RefCall	P	GT:GQ:DP:AD:AF	0/0:26:139:116:0.8345
+MN908947.3	26408	.	C	.	28.18	RefCall	P	GT:GQ:DP:AD:AF	0/0:28:139:74:0.5324
+MN908947.3	26420	.	A	.	26.69	RefCall	P	GT:GQ:DP:AD:AF	0/0:26:139:106:0.7626
+MN908947.3	26430	.	T	.	29.32	RefCall	P	GT:GQ:DP:AD:AF	0/0:29:138:101:0.7319
+MN908947.3	26528	.	A	.	28.68	RefCall	P	GT:GQ:DP:AD:AF	0/0:28:244:206:0.8443
+MN908947.3	26538	.	G	.	25.51	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:248:218:0.8790
+MN908947.3	26549	.	C	.	27.49	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:249:214:0.8594
+MN908947.3	26551	.	T	.	25.74	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:250:224:0.8960
+MN908947.3	26561	.	T	.	24.73	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:249:118:0.4739
+MN908947.3	26594	.	A	.	22.76	RefCall	P	GT:GQ:DP:AD:AF	0/0:22:118:96:0.8136
+MN908947.3	26709	.	G	.	29.43	RefCall	P	GT:GQ:DP:AD:AF	0/0:29:115:100:0.8696
+MN908947.3	26713	.	G	.	28.38	RefCall	P	GT:GQ:DP:AD:AF	0/0:28:115:82:0.7130
+MN908947.3	26745	.	T	.	27.10	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:115:84:0.7304
+MN908947.3	26752	.	C	.	25.26	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:115:100:0.8696
+MN908947.3	26753	.	C	.	27.51	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:115:84:0.7304
+MN908947.3	26950	.	T	.	21.29	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:20:17:0.8500
+MN908947.3	26990	.	A	.	23.16	RefCall	P	GT:GQ:DP:AD:AF	0/0:23:20:16:0.8000
+MN908947.3	27005	.	C	.	24.95	RefCall	P	GT:GQ:DP:AD:AF	0/0:24:20:17:0.8500
+MN908947.3	27035	.	T	.	23.82	RefCall	P	GT:GQ:DP:AD:AF	0/0:23:20:17:0.8500
+MN908947.3	27076	.	A	.	21.90	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:21:18:0.8571
+MN908947.3	27103	.	C	.	23.27	RefCall	P	GT:GQ:DP:AD:AF	0/0:23:21:17:0.8095
+MN908947.3	27106	.	C	.	21.69	RefCall	P	GT:GQ:DP:AD:AF	0/0:21:21:18:0.8571
+MN908947.3	27134	.	T	C	25.35	PASS	P	GT:GQ:DP:AD:AF	1/1:25:21:0,20:0.9524
+MN908947.3	27406	.	C	.	29.19	RefCall	P	GT:GQ:DP:AD:AF	0/0:29:131:100:0.7634
+MN908947.3	27439	.	G	.	25.94	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:131:120:0.9160
+MN908947.3	27469	.	G	.	25.94	RefCall	P	GT:GQ:DP:AD:AF	0/0:25:134:102:0.7612
+MN908947.3	27485	.	T	.	26.73	RefCall	P	GT:GQ:DP:AD:AF	0/0:26:134:107:0.7985
+MN908947.3	27877	.	G	.	27.52	RefCall	P	GT:GQ:DP:AD:AF	0/0:27:76:69:0.9079

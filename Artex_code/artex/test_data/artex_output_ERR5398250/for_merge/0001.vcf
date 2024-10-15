@@ -1,0 +1,23 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##source=Clair3
+##clair3_version=1.0.10
+##cmdline=/home/mzj22/miniconda3/envs/artex/bin/run_clair3.sh --bam_fn=/home/mzj22/dev/artex/test_data/ERR5398250/ERR5398250_longbow.sorted.bam --ref_fn=/home/mzj22/dev/artex/ref/nCoV-2019/V3/nCoV-2019.reference.fasta --threads=12 --platform=ont --model_path=/home/mzj22/dev/artex/clair3_model/r941_prom_hac_g360+g422 --output=clair3 --include_all_ctgs --no_phasing_for_fa --chunk_size=2000 --haploid_sensitive --min_coverage=10
+##reference=/home/mzj22/dev/artex/ref/nCoV-2019/V3/nCoV-2019.reference.fasta
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=MN908947.3,length=29903>
+##bcftools_isecVersion=1.14+htslib-1.17
+##bcftools_isecCommand=isec -p ./for_merge -n=2 /home/mzj22/dev/artex/test_data/ERR5398250/ERR5398250_longbow.fail.vcf.gz clair3/merge_output.vcf.gz; Date=Tue Sep 17 23:04:17 2024
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+MN908947.3	23063	.	A	T	26.09	PASS	F	GT:GQ:DP:AD:AF	1:26:18:1,16:0.8889
+MN908947.3	29717	.	G	A	13.1	PASS	F	GT:GQ:DP:AD:AF	1:13:10:0,8:0.8
+MN908947.3	29725	.	ATT	A	11.72	PASS	F	GT:GQ:DP:AD:AF	1:11:10:1,8:0.8
