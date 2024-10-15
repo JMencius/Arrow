@@ -24,8 +24,10 @@ conda install -c bioconda clair3;
 conda install -c bioconda bcftools;
 pip install click;
 ```
+### Test installation
+After installation, you may have to change the file permissions to execute it with `chmod +x artex` 
 
-After installation, you can test the installation with:
+you can test the installation with:
 ```bash
 ./artex --test;
 ```
