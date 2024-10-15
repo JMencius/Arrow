@@ -8,7 +8,7 @@ Artex is a software tool designed for re-calling variants at low-coverage or low
 Artex can operate in most modern operation system with Python environment. 
 
 ### Option 1.  Build an conda virtural environment
-The `artex.yaml` file is also included in the release, which you can recreate the author's python environment using the following command.
+The `artex_.yaml` config file is included in the release, which you can recreate the author's python environment using the following command.
 ```bash
 conda env create -f artex.yaml;
 ```
