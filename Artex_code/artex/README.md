@@ -27,7 +27,7 @@ pip install click;
 
 After installation, you can test the installation with:
 ```bash
-./artic --test;
+./artex --test;
 ```
 Or run the example test data with:
 ```bash
