@@ -3,6 +3,7 @@ This diectory archives the pipeline for data downsampling.
 
 The purpose of testing downsampling is to check the effect of downsampling to the two main properties of LongBow, Q score disribution and Q score autocorrelation.
 
+
 # Execution environments
 1. The downsampling process utilize `seqtk` 1.3-r106. To recreate the environment, run
 ```bash
@@ -10,8 +11,10 @@ conda env create -f seqtk.yaml;
 ```
 
 2. Python Scripts for Q score and autocorrelation
-These scripts require Python 3.7 or higher.
-
+Just use the same conda environment of `LongBow`
+```bash
+conda env create -f ont-longbow.yaml;
+```
 
 # Data
 We selected a high-coverage ONT sequencing dataset of human melanoma fibroblasts (COLO829) from the ONT Open Data project (s3://ont-open-data/colo829_2023.04/) to evaluate the efficacy of downsampling. This dataset contains 13,760,388 reads from its original POD5 files.

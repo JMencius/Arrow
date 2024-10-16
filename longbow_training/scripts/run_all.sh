@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # Pipeline
+
+mkdir -p ../results/model;
+
+
 # 1. Calculate each model for every basecalling config for all the species
 bash calculate_longbow_model_csv.sh
 

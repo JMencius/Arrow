@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 27 15:59:58 2023
-
-@author: Mencius
-"""
-
 from faster_get_qscore import get_qscore
 import math
 import os
@@ -35,11 +28,13 @@ if __name__ == "__main__":
     parser.add_argument("-r", "--ref", help = "Reference fastq for input", required = True, type = str)
     parser.add_argument("-q", "--query", help = "Query fastq for input", required = True, type = str)
     parser.add_argument("-t", "--threads", help = "Number of parallel threads", default = 12, type = int)
+    parser.add_argument("-o", "--output", help = "Output csv file", type = str)
 
     args = parser.parse_args()
     ref = os.path.abspath(args.ref)
     query = os.path.abspath(args.query)
     threads = int(args.threads)
+    output_file = os.path.abspath(args.output)
 
     ref_qscore = (get_qscore(ref, threads, 0, False))[0]
     query_qscore = (get_qscore(query, threads, 0, False))[0]
@@ -48,11 +43,15 @@ if __name__ == "__main__":
     ref_dict = {(i + 1) : norm_ref[i] for i in range(90)}
     norm_query = normalize(query_qscore)
     query_dict = {(i + 1) : norm_query[i] for i in range(90)}
-
-    print(f"Bhattachaya similarity between {ref} and {query} is {cal_bhattacharyya_coefficient(ref_dict, query_dict)}")
-
+    
+    bc = cal_bhattacharyya_coefficient(ref_dict, query_dict)
+    print(f"Bhattachaya similarity between {ref} and {query} is {bc}")
+    
+    with open(output_file) as f:
+        f.write("Query,Reference, Bhattacharyya coefficient\n")
+        f.write(f"{query},{ref},{bc}\n")
 
     end_time = time.time()
-    # print(f"Running time is {end_time - start_time} seconds.")
+    print(f"Running time is {end_time - start_time} seconds.")
     
 

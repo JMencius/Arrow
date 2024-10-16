@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 27 15:59:58 2023
-
-@author: Mencius
-"""
 import os
 import sys
 import argparse
@@ -39,11 +33,13 @@ if __name__ == "__main__":
     parser.add_argument("-r", "--ref", help = "Reference fastq for input", required = True, type = str)
     parser.add_argument("-q", "--query", help = "Query fastq for input", required = True, type = str)
     parser.add_argument("-t", "--threads", help = "Number of parallel threads", default = 12, type = int)
+    parser.add_argument("-o", "--output", help = "Output csv file", required = True, type = str)
 
     args = parser.parse_args()
     ref = os.path.abspath(args.ref)
     query = os.path.abspath(args.query)
     threads = int(args.threads)
+    output_file = os.path.abspath(output)
 
     fastq1 = extract_read_from_fastq(ref)
     fastq2 = extract_read_from_fastq(query)
@@ -73,8 +69,12 @@ if __name__ == "__main__":
 
     avg_identity = match_base / sum_base
     print(f"Average pairwise sequence identity for {args.ref} and {args.query} is {avg_identity}")
+    
+    with open(output_file, 'r') as f:
+        f.write("Query,Reference,Total base,Match base,Average identity\n")
+        f.write(f"{query},{ref},{sum_base},{match_base},{avg_identity}\n")
 
     end_time = time.time()
-    ##print(f"Running time is {end_time - start_time} seconds.")
+    print(f"Running time is {end_time - start_time} seconds.")
     
 

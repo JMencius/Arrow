@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# build directory structure
+mkdir -p ../results;
+mkdir -p ../data;
+
+# activate Python3 running environment
+conda_base=$(conda info --base);
+source "$conda_base"/etc/profile.d/conda.sh;
+conda activate python3-env;
+
 # partial download the raw ONT FAST5 files
 python partial_download.py -i DNA_raw_20240109.txt -w ../data > ../results/download_log.txt;
 

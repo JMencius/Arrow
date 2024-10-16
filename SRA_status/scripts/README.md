@@ -27,11 +27,11 @@ Specifically, this script first filtered the total SRA Runs based on two conditi
 Plase refer to `SRA_random_100sample.md`
 
 ## Execution environments
-1. Bash Scripts
-The scripts are compatible with most modern Linux distributions that include Bash shell.
-
-2. Python Scripts
-These scripts require Python 3.7 or higher.
+Python3 virtual environment
+The Python scripts require Python 3.7 or higher. To recreate the same Python running environment use
+```bash
+conda env create -f python3-env.yaml;
+```
 
 
 ## Reproduce results
