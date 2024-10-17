@@ -39,7 +39,7 @@ if __name__ == "__main__":
     ref = os.path.abspath(args.ref)
     query = os.path.abspath(args.query)
     threads = int(args.threads)
-    output_file = os.path.abspath(output)
+    output_file = os.path.abspath(args.output)
 
     fastq1 = extract_read_from_fastq(ref)
     fastq2 = extract_read_from_fastq(query)
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     avg_identity = match_base / sum_base
     print(f"Average pairwise sequence identity for {args.ref} and {args.query} is {avg_identity}")
     
-    with open(output_file, 'r') as f:
+    with open(output_file, 'w') as f:
         f.write("Query,Reference,Total base,Match base,Average identity\n")
         f.write(f"{query},{ref},{sum_base},{match_base},{avg_identity}\n")
 
