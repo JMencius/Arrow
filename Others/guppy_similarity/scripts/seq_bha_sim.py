@@ -47,7 +47,7 @@ if __name__ == "__main__":
     bc = cal_bhattacharyya_coefficient(ref_dict, query_dict)
     print(f"Bhattachaya similarity between {ref} and {query} is {bc}")
     
-    with open(output_file) as f:
+    with open(output_file, 'w') as f:
         f.write("Query,Reference, Bhattacharyya coefficient\n")
         f.write(f"{query},{ref},{bc}\n")
 
