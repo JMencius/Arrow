@@ -1,9 +1,12 @@
 # Descriptions 
 This directory archive the pipeline which we benchmark shasta *de novo* assembly with different config.
 
+
 # Execution environments
 1. For `shasta`, we download the shasta binary executable from shasta github <https://github.com/paoloshasta/shasta/releases> version 0.11.0
-`wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux-0.11.0;`
+```bash
+wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux-0.11.0;
+```
 
 2. For `yak`, we set up the `conda` environment as follow:
 ```bash
@@ -12,7 +15,7 @@ conda env create -f yak.yaml;
 
 3. For `calN50`, we download the release from github <https://github.com/lh3/calN50>, the recreate the running virtual environmnet
 ```bash
-conda env create -f calN50.yaml;
+conda env create -f caln50.yaml;
 ```
 
 

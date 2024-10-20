@@ -24,6 +24,6 @@ calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../res
 
 # Run yak QV evaluation
 conda activate yak;
-yak qv -t 32 -p -K 3.2g -l 100k ../ref/sr.yak ../results/R9G6FAST_R10/Assembly.fasta > ../results/R9G6FAST_R10/yak.txt;
-yak qv -t 32 -p -K 3.2g -l 100k ../ref/sr.yak ../results/R9G6FAST_R9G4/Assembly.fasta > ../results/R9G6FAST_R9G4/yak.txt;
-yak qv -t 32 -p -K 3.2g -l 100k ../ref/sr.yak ../results/R9G6FAST_R9G6/Assembly.fasta > ../results/R9G6FAST_R9G6/yak.txt;
+yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R9G6FAST_R10/Assembly.fasta > ../results/R9G6FAST_R10/yak.txt;
+yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R9G6FAST_R9G4/Assembly.fasta > ../results/R9G6FAST_R9G4/yak.txt;
+yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R9G6FAST_R9G6/Assembly.fasta > ../results/R9G6FAST_R9G6/yak.txt;

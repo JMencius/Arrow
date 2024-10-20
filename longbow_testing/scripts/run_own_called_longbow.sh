@@ -1,12 +1,15 @@
-$!/bin/bash
+#!/bin/bash
 
 conda_base=$(conda info --base);
 source "$conda_base"/etc/profile.d/conda.sh;
 conda activate ont-longbow;
 
+script_dir=$(dirname "$(realpath "$0")")
+base=$(dirname "$script_dir")
 
-cd ../data/test_data_assemble;
-for i in *.fastq; do
+
+for i in ../data/G4G6_passonly/*.fastq; do
 	echo "$i";
-	python ../../longbow_code/longbow2.0.4/longbow.py -t 48 -i "$i" -b -o ../results/own_called/"$i".json;
+	name=$(basename "$i")
+	python ../../longbow_code/longbow2.2.0/longbow.py -t 32 -i "$i" -b -o "$base"/results/own_called/"$name".json;
 done

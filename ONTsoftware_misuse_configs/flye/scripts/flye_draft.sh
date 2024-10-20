@@ -1,12 +1,20 @@
 #!/bin/bash
 
-
 conda_base=$(conda info --base);
 source "$conda_base"/etc/profile.d/conda.sh;
 conda activate flye;
 
+# build directory structure
+mkdir -p ../results/R9G4FAST;
+mkdir -p ../results/R9G4HAC;
+mkdir -p ../results/R9G6FAST;
+mkdir -p ../results/R9G6HAC;
+mkdir -p ../results/R9G6SUP;
+mkdir -p ../results/R10D0HAC;
+mkdir -p ../results/R10D0SUP;
 
-# build draft for different HG002 basecalling configuration
+
+# build flye draft for different HG002 basecalling configuration
 ## R9 Guppy4 data
 #For ONT R9 `Guppy4` basecalled data (`FAST` and `HAC` mode)
 flye --nano-raw ../../basecalled_data/HG002_R9G4FAST_q8.fastq -t 112 -g 3.1g -o ../results/R9G4FAST --asm-coverage 50;
@@ -24,3 +32,5 @@ flye --nano-hq ../../basecalled_data/HG002_R9G6SUP_q10.fastq -t 112 -g 3.1g -o .
 #For ONT R10 `Dorado0` basecalled data (Q20 data) in `HAC` and `SUP` mode we use
 flye --nano-hq ../../basecalled_data/HG002_R10D0HAC_q9.fastq --read-error 0.03 -t 112 -g 3.1g -o ../results/R10D0HAC --asm-coverage 50;
 flye --nano-hq ../../basecalled_data/HG002_R10D0SUP_q10.fastq --read-error 0.03 -t 112 -g 3.1g -o ../results/R10D0SUP --asm-coverage 50;
+
+
