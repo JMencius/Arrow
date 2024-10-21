@@ -15,7 +15,7 @@ chmod +x ./calN50.js;
 # Pipeline
 ## We enumerate all the configs for all the data.
 # 1. run HG002 R9G4FAST shasta and evaluation
-#bash R9G4FAST_shasta_yak_NG50.sh;
+bash R9G4FAST_shasta_yak_NG50.sh;
 
 # 2. run HG002 R9G4HAC shasta
 #bash R9G4HAC_shasta_yak_NG50.sh;
