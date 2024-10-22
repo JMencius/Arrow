@@ -10,5 +10,5 @@ model=(r941_prom_fast_g303 r941_prom_high_g4011 r941_prom_fast_g507 r941_prom_ha
 name=(R9G4FAST R9G4HAC R9G6FAST R9G6HAC R9G6SUP R10D0HAC R10D0SUP)
 
 for idx in {0..6};do
-	medaka_consensus -t 48 -d ../data/"$subject"/contigs.fasta -m ${model[$idx]} -b 50 -o ../results/"$subject"/"$subject"_${name[$idx]} -i ../../basecalled_data/HG002_R9G4FAST_q8.fastq;
+	medaka_consensus -x -t 48 -d ../data/"$subject"/contigs.fasta -m ${model[$idx]} -b 50 -o ../results/"$subject"/"$subject"_${name[$idx]} -i ../../basecalled_data/HG002_R9G4FAST_q8.fastq;
 done
