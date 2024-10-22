@@ -50,6 +50,7 @@ for i in analysis:
         if "climb" not in subject[0] and "climb" in subject[1]:
             double_file[i] = [subject[1], subject[0]]
 
+print(f"In total {len(double_file.keys())} groups have both NGS and ONT sequencing data and analysis file")
 
 with open(output_csv, 'w') as f:
     f.write("id,ERR id,Download link,Device,Corresponding Illumina ERR id,ONT assembly, Illumina assembly\n")

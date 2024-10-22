@@ -22,7 +22,7 @@ conda activate bcftools;
 # consensus2vcf
 for i in "$base"/data/ont_consensus/ERR*;do
 	ERR=$(basename "$i")
-    cd "$base"/data/ont_consensus/"$ERR";
+	cd "$base"/data/ont_consensus/"$ERR";
 	bcftools mpileup -B -m 1 -f "$base"/ref/nCoV-2019/V3/nCoV-2019.reference.fasta sorted.bam -O b|bcftools call -O v -o "$ERR"_ont.vcf -mv --ploidy 1;
 done
 

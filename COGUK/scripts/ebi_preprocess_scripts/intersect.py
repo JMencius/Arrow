@@ -19,6 +19,8 @@ with open(input_txt, 'r') as f:
             m = line.split()
             illumina[m[-1]] = m[3]
 
+print("Intersecting NGS and ONT data")
+
 count = 0
 intersect = list()
 with open(input_txt, 'r') as f:
@@ -39,10 +41,6 @@ with open(input_txt, 'r') as f:
                 intersect.append([m[-1], m[3], m[-3], device, illumina[m[-1]]])
 
 
-for i in intersect:
-    print(i)
-
-print(f"{count} record have Illumina and ONT sequencing")
 
 with open(output_csv, 'w') as file:
     file.write("id,ERR id,Download link,Device,Corresponding Illumina ERR id\n")
@@ -50,5 +48,4 @@ with open(output_csv, 'w') as file:
         file.write(','.join(i))
         file.write('\n')
 
-    print("Written to csv file, ALL DONE")
 

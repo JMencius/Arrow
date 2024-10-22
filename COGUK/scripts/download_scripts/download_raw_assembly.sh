@@ -29,9 +29,10 @@ while read -r str1 str2 str3 str4;do
 	wget -P "$base"/data/ont_consensus/"$ERR" "$ontLink";
 	wget -P "$base"/data/ngs_consensus/"$ERR" "$ngsLink";
 
-	gzip -dk "$base"/data/ont_raw_reads/*.gz;
-	gzip -dk "$base"/data/ont_consensus/"$ERR"/*.gz;
-	gzip -dk "$base"/data/ngs_consensus/"$ERR"/*.gz;
+
+gzip -dk "$base"/data/ont_raw_reads/*.gz;
+gzip -dk "$base"/data/ont_consensus/"$ERR"/*.gz;
+gzip -dk "$base"/data/ngs_consensus/"$ERR"/*.gz;
 
 
 done < "$input_file"

@@ -2,7 +2,7 @@
 
 conda_base=$(conda info --base);
 source "$conda_base"/etc/profile.d/conda.sh;
-conda activate articlatest;
+conda activate artic;
 
 input_file="../ERR_list_models.txt";
 

@@ -10,6 +10,7 @@ base=$(dirname "$script_base")
 
 for i in "$base"/results/ERR*;do
 	ERR=$(basename "$i")
-	python "$base"/scripts/artex/artex.py -i "$base"/results/"$ERR"/longbow -o "$base"/results/"$ERR"/artex  -p clair3 -c R9G4 --verbose;
+	mkdir -p "$base"/results/"$ERR"/artex;
+	python "$base"/scripts/artex/artex.py -i "$base"/results/"$ERR"/longbow -o "$base"/results/"$ERR"/artex  -p "$ERR"_longbow -c R9G4 --verbose;
 done
 

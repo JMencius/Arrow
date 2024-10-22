@@ -1,5 +1,9 @@
 #!/bin/bash
 
+conda_base=$(conda info --base);
+source "$conda_base"/etc/profile.d/conda.sh;
+conda activate python3-env;
+
 # calculate Artex extra variants compared to Artic pipelines
 python get_extra_variant.py;
 

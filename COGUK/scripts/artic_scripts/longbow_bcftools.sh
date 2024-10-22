@@ -5,7 +5,8 @@ source "$conda_base"/etc/profile.d/conda.sh;
 conda activate minimap2;
 
 script_dir=$(dirname "$(realpath "$0")")
-base=$(dirname "$script_dir")
+script_base=$(dirname "$script_dir")
+base=$(dirname "$script_base")
 
 # align to reference genome
 for i in "$base"/results/ERR*;do

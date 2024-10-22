@@ -1,5 +1,9 @@
 #!/bin/bash
 
+conda_base=$(conda info --base);
+source "$conda_base"/etc/profile.d/conda.sh;
+conda activate python3-env;
+
 # find COG-UK sample id with both NGS and ONT sequencing
 python intersect.py -i ../../data/ebi_metadata/filereport_read_run_PRJEB37886_tsv.txt -o ../../data/ebi_metadata/nCoV2019_ONT_illumina.csv;
 
