@@ -17,9 +17,9 @@ source "$conda_base"/etc/profile.d/conda.sh;
 conda activate caln50;
 
 ## calculate NG50 for each config
-calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../results/R9G6FAST_R10/Assembly.fasta > ../results/R9G6FAST_R10/calN50_result.txt;
-calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../results/R9G6FAST_R9G4/Assembly.fasta > ../results/R9G6FAST_R9G4/calN50_result.txt;
-calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../results/R9G6FAST_R9G6/Assembly.fasta > ../results/R9G6FAST_R9G6/calN50_result.txt;
+./calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../results/R9G6FAST_R10/Assembly.fasta > ../results/R9G6FAST_R10/calN50_result.txt;
+./calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../results/R9G6FAST_R9G4/Assembly.fasta > ../results/R9G6FAST_R9G4/calN50_result.txt;
+./calN50.js -f ../ref/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.fai ../results/R9G6FAST_R9G6/Assembly.fasta > ../results/R9G6FAST_R9G6/calN50_result.txt;
 
 
 # Run yak QV evaluation
