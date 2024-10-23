@@ -25,9 +25,9 @@ while read -r str1 str2 str3 str4;do
 	mkdir -p "$base"/data/ont_consensus/"$ERR";
 	mkdir -p "$base"/data/ngs_consensus/"$ERR";
 
-	wget -P "$base"/data/ont_raw_reads/ "$ontraw"
-	wget -P "$base"/data/ont_consensus/"$ERR" "$ontLink";
-	wget -P "$base"/data/ngs_consensus/"$ERR" "$ngsLink";
+	wget -nc -P "$base"/data/ont_raw_reads/ "$ontraw"
+	wget -nc -P "$base"/data/ont_consensus/"$ERR" "$ontLink";
+	wget -nc -P "$base"/data/ngs_consensus/"$ERR" "$ngsLink";
 
 
 gzip -dk "$base"/data/ont_raw_reads/*.gz;
