@@ -24,6 +24,11 @@ conda env create -f ./envs/artex.yaml;
 conda env create -f ./envs/hap.yaml;
 ```
 
+6. bioawk
+```bash
+conda env create -f ./envs/bioawk.yaml;
+```
+
 # Pipelines
 1. Preprocess of COG-UK EBI metadata
 Purpose: COG-UK sample id with both NGS and ONT sequencing, and retrive the download links for raw ONT sequence and analysis files (NGS-assembled consensus sequence, ONT-assembled consensus sequence)
@@ -91,4 +96,10 @@ To repeat our results, please install the forementioned conda environment and ru
 bash ./run_all.sh;
 ```
 
+# Possible error
+1. Artic pipeline
+If you encounter `medaka: error: argument command: invalid choice: 'consensus'`, because your conda install newer `medaka` version but not the compatabile one, try
+```bash
+conda install -c bioconda -c conda-forge artic medaka=1.11.3 
+```
 
