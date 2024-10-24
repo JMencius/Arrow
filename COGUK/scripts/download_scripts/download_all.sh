@@ -4,5 +4,5 @@
 bash download_raw_assembly.sh;
 
 # download ref data
-bash donwload_ref.sh;
+bash download_ref.sh;
 
