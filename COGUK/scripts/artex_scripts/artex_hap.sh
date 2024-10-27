@@ -2,7 +2,7 @@
 
 conda_base=$(conda info --base);
 source "$conda_base"/etc/profile.d/conda.sh;
-conda activate hap;
+conda activate happy;
 
 script_dir=$(dirname "$(realpath "$0")")
 script_base=$(dirname "$script_dir")
