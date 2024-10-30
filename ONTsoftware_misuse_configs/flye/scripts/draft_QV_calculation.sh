@@ -23,4 +23,4 @@ yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R9G6SUP/30-c
 yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R10D0HAC/30-contigger/contigs.fasta > ../results/R10D0HAC/R10D0HAC_draft_yak.txt;
 
 # R10D0SUP
-#yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R10D0SUP/30-contigger/contigs.fasta > ../results/R10D0SUP/R10D0SUP_draft_yak.txt;
+yak qv -t 32 -p -K 3.2g -l 100k ../../yak/results/sr.yak ../results/R10D0SUP/30-contigger/contigs.fasta > ../results/R10D0SUP/R10D0SUP_draft_yak.txt;
