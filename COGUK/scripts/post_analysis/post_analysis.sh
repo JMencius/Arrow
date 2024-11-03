@@ -20,3 +20,5 @@ python get_f1.py -l ../err_id.txt -d ../../results/random_hap -o ../../results/F
 python get_f1.py -l ../err_id.txt -d ../../results/random_hap -o ../../results/F1_score_file/random_INDEL.csv -m INDEL -p random;
 python get_f1.py -l ../err_id.txt -d ../../results/ont_consensus_hap -o ../../results/F1_score_file/ont_consensus_SNP.csv -m SNP -p ont;
 python get_f1.py -l ../err_id.txt -d ../../results/ont_consensus_hap -o ../../results/F1_score_file/ont_consensus_INDEL.csv -m INDEL -p ont;
+python get_f1.py -l ../err_id.txt -d ../../results/artex_hap -o ../../results/F1_score_file/artex_SNP.csv -m SNP -p artex;
+python get_f1.py -l ../err_id.txt -d ../../results/artex_hap -o ../../results/F1_score_file/artex_SNP.csv -m INDEl -p artex;
