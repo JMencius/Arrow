@@ -54,7 +54,7 @@ if __name__ == "__main__":
     for i in err_list:
         ontc = parse_vcf(f"../../data/ont_consensus/{i}/{i}_ont.vcf")
         ngsc = parse_vcf(f"../../data/ngs_consensus/{i}/{i}_ngs.vcf")
-        longbow = parse_vcf(f"../../results/{i}/longbow/{i}_longbow_bcftools.vcf")
+        longbow = parse_vcf(f"../../results/{i}/longbow/{i}_longbow_consensus.vcf")
         artex = parse_vcf(f"../../results/{i}/artex/{i}_artex_cleaned_consensus.vcf")
         
         a = find_interesting(ontc, ngsc, longbow, artex, i)
