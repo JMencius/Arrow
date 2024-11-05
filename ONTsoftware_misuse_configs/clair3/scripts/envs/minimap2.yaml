@@ -1,0 +1,34 @@
+name: minimap2
+channels:
+  - bioconda
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - bzip2=1.0.8=h5eee18b_6
+  - c-ares=1.19.1=h5eee18b_0
+  - ca-certificates=2024.3.11=h06a4308_0
+  - htslib=1.20=h81da01d_0
+  - k8=0.2.5=h9a82719_1
+  - krb5=1.20.1=h143b758_1
+  - libcurl=8.7.1=h251f7ec_0
+  - libdeflate=1.20=hd590300_0
+  - libedit=3.1.20230828=h5eee18b_0
+  - libev=4.33=h7f8727e_1
+  - libgcc-ng=14.1.0=h77fa898_0
+  - libgomp=14.1.0=h77fa898_0
+  - libnghttp2=1.57.0=h2d74bed_0
+  - libssh2=1.11.0=h251f7ec_0
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - libzlib=1.2.13=h4ab18f5_6
+  - minimap2=2.22=h5bf99c6_0
+  - ncurses=6.5=h59595ed_0
+  - openssl=3.3.1=h4ab18f5_1
+  - samtools=1.20=h50ea8bc_0
+  - xz=5.4.6=h5eee18b_1
+  - zlib=1.2.13=h4ab18f5_6
+prefix: /home/mzj22/miniconda3/envs/minimap2
