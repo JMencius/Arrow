@@ -1,7 +1,7 @@
 # Description
 This folder archives the scripts for EBI data download, random selection of artic model, artic and artex running, and post analysis.
 
-# Execution environment
+# Execution environments
 The conda environment used is listed in `./envs`. Use `conda env create` to recreate each environments, 
 1. Minimap2
 ```bash
