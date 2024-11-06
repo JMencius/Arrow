@@ -3,7 +3,10 @@ This repository archive the pipeplines and codes in the LongBow manuscript.
 
 # Contents
 The contents are organized into eight folders. Please feel free to click on any title to view the detailed `README.md`.
+
 1. [SRA_status](./SRA_status/scripts/README.md)
+
+Status evaluation of Oxford nanopore data in the SRA database
 - ONT raw data availability in SRA database
 - BAM file availability in SRA datbase
 - flowcell and basecaller version labelling in SRA database
@@ -11,6 +14,7 @@ The contents are organized into eight folders. Please feel free to click on any 
 
 
 2. ONTsoftware_misuse_configs
+
 Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
 - Clair3
 - Shasta
@@ -18,22 +22,28 @@ Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
 
   
 3. LongBow_training
+
 Training code of LongBow
 
 
 4. LongBow_testing
+
 Testing LongBow on 66 groups of ONT data and human ONT SRA data.
 
 
 5. LongBowDB
+
 Source code for LongBowDB
 
 
 6. COGUK
+
 Reanalysis of COGUK SARS-CoV-2 data
 
 
 7. Others
+
+Other pipelines in the manuscript
 - Downsampling evaluation
 - Close Guppy version similarity
 - SRA fast5 data simplex and duplex precentage
