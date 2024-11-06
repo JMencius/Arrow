@@ -26,7 +26,7 @@ bash draft_QV_calculation.sh
 ```
 
 # Flye parameters
-Flye has different parameters for different ONT data. The following listed the parameter we used to assemble the draft.
+Flye has different parameters for different ONT data. The following lists the parameter we used to assemble the draft.
 | Flowcell | Basecaller | Basecalling mode | Flye parameter |
 |:---:|:---:|:---:|:---:|
 | R9 | Guppy4.2.2 | FAST | --nano-raw |
