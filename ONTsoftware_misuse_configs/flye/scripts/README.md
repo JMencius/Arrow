@@ -15,7 +15,7 @@ conda env create -f yak.yaml;
 
 
 # Pipelines
-1. Assembly `Flye` draft for different HG002 basecalling configuration
+1. Assemble `Flye` draft for different HG002 basecalling configuration
 ```
 bash flye_draft.sh
 ```
