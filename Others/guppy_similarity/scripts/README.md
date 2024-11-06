@@ -15,6 +15,18 @@ conda env create -f mappy.yaml;
 conda env create -f ont-longbow.yaml;
 ```
 
+# Data
+Please download the `HG002_R9_guppy_similarity.tar.gz` file we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipelines.
+The files contained the basecalled FASTQ of HG002 data.
+```bash
+mkdir -p ../data;
+cd ../data;
+## Download the FASTQ file through FTP link in the ScienceDB
+## decompression
+tar -zxvf HG002_R9_guppy_similarity.tar.gz;
+```
+
+
 # Pipelines
 1. Evaluate the sequence identity between HG002 R9 Guppy version
 ```bash
