@@ -22,7 +22,7 @@ This directory contains 4 independent pipelines for
     - the sequencing platform is Oxford Nanopore. Multiple regular expressions were then employed to identify keywords related to flowcell or basecaller configuration information within the XML files of the filtered SRA Runs. 
 
 
-4. Random downsampling 100 SRA run for label checking
+4. Random downsampling SRA run
 
     Plase refer to `SRA_random_100sample.md`
 
@@ -35,7 +35,7 @@ conda env create -f python3-env.yaml;
 
 
 ## Reproduce results
-1. To reproduce our results for `pipeline 1` and `pipeline 2`, use SRA advance search in
+1. To reproduce our results for `pipeline 1` and `pipeline 2`, please navigae to `SRA advance search` in
 ```
 https://www.ncbi.nlm.nih.gov/sra/advanced
 ```
