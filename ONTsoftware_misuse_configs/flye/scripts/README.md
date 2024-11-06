@@ -55,4 +55,4 @@ To repeat our results, please
 ```
 bash ./run_all.sh;
 ```
-
+<mark> Note that, you may not get exact yak QV score as ours. This is because some steps in Flye is not deterministic, as discuss in Flye issue <https://github.com/mikolmogorov/Flye/issues/298>, but we expect the results to be comparable. </mark>
