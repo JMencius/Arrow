@@ -1,9 +1,9 @@
 # Descriptions 
-This directory archive the pipeline which we benchmark shasta *de novo* assembly with different config.
+This directory archives the pipeline which we benchmark shasta *de novo* assembly with different config.
 
 
 # Execution environments
-1. For `shasta`, we download the shasta binary executable from shasta github <https://github.com/paoloshasta/shasta/releases> version 0.11.0
+1. For `Shasta`, we download the `Shasta` binary executable from GitHub <https://github.com/paoloshasta/shasta/releases> version 0.11.0
 ```bash
 wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux-0.11.0;
 ```
@@ -13,7 +13,7 @@ wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux
 conda env create -f yak.yaml;
 ```
 
-3. For `calN50`, we download the release from github <https://github.com/lh3/calN50>, the recreate the running virtual environmnet
+3. For `calN50`, we download the release from github <https://github.com/lh3/calN50>, recreate the running virtual environmnet
 ```bash
 conda env create -f caln50.yaml;
 ```
@@ -47,19 +47,26 @@ The correct Shasta parameters for different flowcell and basecaller versions of 
 For example: `R10D0FAST_R9G4` means `R10D0FAST` basecalled FASTQ data using `shasta` config for `R9G4` data.
 
 2. NG50
-`calN50_result.txt` holds the `NG50` result in line start with `NL      50`
+`calN50_result.txt` holds the `NG50` result in line start with
+ ```
+NL      50
+```
 For example:
-`NL      50      12529106        66`
+```
+NL      50      12529106        66
+```
 
-3. Yak QV score
+4. Yak QV score
 `yak.txt` holds the `Yak QV score` result in the last line
 For example:
-`QV      28.775  29.115`
+```
+QV      28.775  29.115
+```
 We record the second value (29.115), which is the `adjusted_quality_value` reported by `Yak`.
 
 
 # Repeat our results
-To repeat our results, please install the forementioned conda environment first and run
+To repeat our results, please install the aforementioned conda environment first and run
 ```
 bash ./run_all.sh;
 ```
