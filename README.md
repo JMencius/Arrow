@@ -1,5 +1,5 @@
 # LongBow Manuscript Code Repository
-This repository archives the pipeplines and codes in the LongBow manuscript.
+This repository archives the pipelines and codes in the LongBow manuscript.
 
 # Contents
 The contents are organized into seven main folders. Please feel free to click on any title to view the detailed `README.md`.
@@ -9,7 +9,7 @@ The contents are organized into seven main folders. Please feel free to click on
     Assessment of the availability and metadata labeling of Oxford Nanopore sequencing data in the SRA database
     - [ONT raw data availability in SRA database](./SRA_status/scripts/raw_ONTdata_search.md)
     - [BAM file availability in SRA datbase](./SRA_status/scripts/sra_bam_availability.md)
-    - [flowcell and basecaller version labelling in SRA database](./SRA_status/scripts/README.md)
+    - [flowcell and basecaller version labeling in SRA database](./SRA_status/scripts/README.md)
     - [Random selection of SRA run](./SRA_status/scripts/SRA_random_1000sample.md)
 
 
@@ -46,24 +46,24 @@ The contents are organized into seven main folders. Please feel free to click on
     Other pipelines in the manuscript
     - [Downsampling evaluation](./Others/downsampling_test/scripts/README.md)
     - [Close Guppy version similarity](./Others/guppy_similarity/scripts/README.md)
-    - [SRA fast5 data simplex and duplex precentage](./Others/sra_simplex_duplex/scripts/README.md)
+    - [SRA fast5 data simplex and duplex percentage](./Others/sra_simplex_duplex/scripts/README.md)
 
 
 
 # Requirement
 ## OS requirement
-Codes were tested on _Linux_ operating systems.
-Linux: Redhat enterprise linux 8
+Codes were tested on _Linux_ operating systems. The following release is tested.
+Linux: Redhat Enterprise Linux 8
 Linux: Ubuntu 22.04.1
 
 
 ## Software requirement
 ### Conda version
 Most of the following softwares are installed through `Conda` environment. We have run test on Conda version `24.1.2` and version `24.4.0`.
-<mark>We strongly recommend Conda version >= `24.1.x` installed.</mark>
+<mark>We strongly recommend installing Conda version >= `24.1.x`.</mark>
 
 ### Programming language
-To run the Python scripts we provided, one should use Python 3.7 or higher version. 
+To run the Python scripts we provided, Python 3.7 or a higher version is required. 
 
 ### Software version list
 | Software | Version |
