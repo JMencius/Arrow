@@ -7,18 +7,18 @@ The contents are organized into eight folders. Please feel free to click on any 
 1. [SRA_status](./SRA_status/scripts/README.md)
 
     Assessment of the availability and metadata labeling of Oxford Nanopore sequencing data in the SRA database
-- [ONT raw data availability in SRA database](./SRA_status/scripts/raw_ONTdata_search.md)
-- [BAM file availability in SRA datbase](./SRA_status/scripts/sra_bam_availability.md)
-- [flowcell and basecaller version labelling in SRA database](./SRA_status/scripts/README.md)
-- [Random selection of SRA run](./SRA_status/scripts/SRA_random_1000sample.md)
+    - [ONT raw data availability in SRA database](./SRA_status/scripts/raw_ONTdata_search.md)
+    - [BAM file availability in SRA datbase](./SRA_status/scripts/sra_bam_availability.md)
+    - [flowcell and basecaller version labelling in SRA database](./SRA_status/scripts/README.md)
+    - [Random selection of SRA run](./SRA_status/scripts/SRA_random_1000sample.md)
 
 
 2. ONTsoftware_misuse_configs
 
     Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
-- [Clair3](./ONTsoftware_misuse_configs/clair3/scripts/README.md)
-- [Shasta](./ONTsoftware_misuse_configs/shasta/scripts/README.md)
-- [Medaka](./ONTsoftware_misuse_configs/medaka/scripts/README.md)
+    - [Clair3](./ONTsoftware_misuse_configs/clair3/scripts/README.md)
+    - [Shasta](./ONTsoftware_misuse_configs/shasta/scripts/README.md)
+    - [Medaka](./ONTsoftware_misuse_configs/medaka/scripts/README.md)
 
   
 3. [LongBow_training](./longbow_training/scripts/README.md)
@@ -44,9 +44,9 @@ The contents are organized into eight folders. Please feel free to click on any 
 7. Others
 
     Other pipelines in the manuscript
-- [Downsampling evaluation](./Others/downsampling_test/scripts/README.md)
-- [Close Guppy version similarity](./Others/guppy_similarity/scripts/README.md)
-- [SRA fast5 data simplex and duplex precentage](./Others/sra_simplex_duplex/scripts/README.md)
+    - [Downsampling evaluation](./Others/downsampling_test/scripts/README.md)
+    - [Close Guppy version similarity](./Others/guppy_similarity/scripts/README.md)
+    - [SRA fast5 data simplex and duplex precentage](./Others/sra_simplex_duplex/scripts/README.md)
 
 
 
