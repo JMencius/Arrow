@@ -25,26 +25,41 @@ you also need to download several models manually because not all models were co
 ```bash
 conda env create -f ./envs/hap.yaml;
 ```
+# Clair3 models
+The correct Clair3 models for different flowcell and basecaller versions of HG002 data is listed below, the download link is also provided.
+
+| Flowcell | Basecaller | Basecalling mode | Closest clair3 model |
+|:---:|:---:|:---:|:-----:|
+| R9 | Guppy2.3.7 | \ | [r941_prom_hac_g238](http://www.bio8.cs.hku.hk/clair3/clair3_models/) |
+| R9 | Guppy4.2.2 | FAST | [r941_prom_hac_g360+g422](http://www.bio8.cs.hku.hk/clair3/clair3_models/) |
+| R9 | Guppy4.2.2 | HAC | r941_prom_hac_g360+g422 |
+| R9 | Guppy6.3.8 | FAST | [r941_prom_sup_g5014](http://www.bio8.cs.hku.hk/clair3/clair3_models/) |
+| R9 | Guppy6.3.8 | HAC | r941_prom_sup_g5014 |
+| R9 | Guppy6.3.8 | SUP | r941_prom_sup_g5014 |
+| R10 | Dorado0.4.3 | FAST | [r1041_e82_400bps_hac_v410](https://github.com/nanoporetech/rerio/tree/master/clair3_models) |
+| R10 | Dorado0.4.3 | HAC | r1041_e82_400bps_hac_v410 |
+| R10 | Dorado0.4.3 | SUP | [r1041_e82_400bps_sup_v410](https://github.com/nanoporetech/rerio/tree/master/clair3_models) |
+
 
 
 # Pipelines
 1. Prepare reference
-```
+```bash
 bash ./prepare/prepare.sh
 ```
 
 2. Run alignment
-```
+```bash
 bash ./alignment/alignment.sh
 ```
 
 3. Run Clair3
-```
+```bash
 bash ./variant_calling/clair3.sh
 ```
 
 4. Run hap.py
-```
+```bash
 bash ./benchmark/benchmark.sh
 ```
 
@@ -63,7 +78,7 @@ To repeat our results, please
 1. Install the forementioned conda environment.
 
 2. Run `run_all.sh`
-```
+```bash
 bash ./run_all.sh;
 ```
 
