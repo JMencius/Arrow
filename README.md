@@ -1,5 +1,5 @@
 # LongBow manuscript code
-This repository archive the pipeplines and codes in the manuscript of LongBow.
+This repository archive the pipeplines and codes in the LongBow manuscript.
 
 # Content
 | Folder | Contents |
@@ -12,6 +12,7 @@ This repository archive the pipeplines and codes in the manuscript of LongBow.
 | COGUK | Reanalysis of COGUK SARS-CoV-2 data |
 | Others | Downsamping evaluation, Close Guppy version similarity, SRA fast5 data simplex and duplex |
 
+For each folder, a detailed `README.md` is provided.
 
 # Programming language and software
 ## OS requirement
