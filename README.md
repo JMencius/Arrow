@@ -1,7 +1,7 @@
 # LongBow manuscript code
 This repository archive the pipeplines and codes in the LongBow manuscript.
 
-# Content
+# Contents
 | Folder | Contents |
 | :---: | :---: |
 | SRA_status | ONT raw data, flowcell and basecaller version labelling in SRA database |
