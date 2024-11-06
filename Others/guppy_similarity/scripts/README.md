@@ -1,5 +1,5 @@
 # Descriptions
-This diectory archives the pipeline for sequence identity and QV score similarity between Guppy versions.
+This directory archives the pipeline for sequence identity and QV score similarity between Guppy versions.
 
 We use the downsampled dataset HG002 sequenced with R9.4.1 flowcell (https://labs.epi2me.io/gm24385_2021.05) to evaluate the sequence identity and QV score similarity.
 
@@ -21,7 +21,7 @@ conda env create -f ont-longbow.yaml;
 bash HG002_R9_seq_identity.sh
 ```
 
-2. Evaluate the Bhattacharyya coeffient between HG002 R9 Guppy version
+2. Evaluate the Bhattacharyya coefficient between HG002 R9 Guppy version
 ```bash
 bash HG002_R9_QV_sim.sh > ../results/HG002_R9_qv_sim.txt
 ```
