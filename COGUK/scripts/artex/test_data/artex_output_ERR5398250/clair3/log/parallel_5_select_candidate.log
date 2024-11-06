@@ -1,2 +1,0 @@
-Seq	Host	Starttime	JobRuntime	Send	Receive	Exitval	Signal	Command
-1	:	1726585453.881	     0.112	0	0	0	0	pypy3 /home/mzj22/miniconda3/envs/artex/bin/scripts/../clair3.py SelectCandidates     --pileup_vcf_fn /home/mzj22/dev/artex/test_data/artex_output_ERR5398250/clair3/pileup.vcf.gz     --split_folder /home/mzj22/dev/artex/test_data/artex_output_ERR5398250/clair3/tmp/full_alignment_output/candidate_bed     --ref_fn /home/mzj22/dev/artex/ref/nCoV-2019/V3/nCoV-2019.reference.fasta     --var_pct_full 0.7     --ref_pct_full 0.1     --platform ont     --ctgName MN908947.3
