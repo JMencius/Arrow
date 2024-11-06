@@ -2,17 +2,36 @@
 This repository archive the pipeplines and codes in the LongBow manuscript.
 
 # Contents
-| Folder | Contents |
-| :---: | :---: |
-| SRA_status | ONT raw data, flowcell and basecaller version labelling in SRA database |
-| ONTsoftware_misuse_configs | Benchmark of Clair3, Shasta, medaka with correct or wrong configs |
-| LongBow_training | Training code of LongBow |
-| LongBow_testing | LongBow testing on basecalled labelling dataset and SRA human ONT data |
-| LongBowDB | Source code for LongBowDB |
-| COGUK | Reanalysis of COGUK SARS-CoV-2 data |
-| Others | Downsamping evaluation, Close Guppy version similarity, SRA fast5 data simplex and duplex |
+The contents are organized into eight folders. Please feel free to click on any title to view the detailed `README.md`.
+1. SRA_status[./SRA_status/scripts/README.md]
+- ONT raw data availability in SRA database
+- BAM file availability in SRA datbase
+- flowcell and basecaller version labelling in SRA database
+- Random selection of SRA run 
 
-For each folder, a detailed `README.md` is provided.
+2. ONTsoftware_misuse_configs
+Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
+- Clair3
+- Shasta
+- Medaka
+  
+3. LongBow_training
+Training code of LongBow
+
+4. LongBow_testing
+Testing LongBow on 66 groups of ONT data and human ONT SRA data.
+
+5. LongBowDB
+Source code for LongBowDB
+
+6. COGUK
+Reanalysis of COGUK SARS-CoV-2 data
+
+7. Others
+- Downsampling evaluation
+- Close Guppy version similarity
+- SRA fast5 data simplex and duplex precentage
+
 
 # Programming language and software
 ## OS requirement
