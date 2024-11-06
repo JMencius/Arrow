@@ -26,6 +26,20 @@ The genome draft of `Medaka` polishing is based on `flye` contigs. The evaluatio
 2. Run `yak` evaluation for polished data
 `bash cal_poshlied_yakQV.sh;`
 
+# Medaka models
+The correct Medaka models for different flowcell and basecaller versions of HG002 data is listed below.
+| Flowcell | Basecaller | Mode | Correct Medaka config |
+|:---:|:---:|:---:|:---:|
+| R9 | Guppy4.2.2 | FAST | r941_prom_fast_g303 |
+| R9 | Guppy4.2.2 | HAC | r941_prom_high_g4011 |
+| R9 | Guppy6.3.8 | FAST | r941_prom_fast_g507 |
+| R9 | Guppy6.3.8 | HAC | r941_prom_hac_g507 |
+| R9 | Guppy6.3.8 | SUP | r941_prom_sup_g507 |
+| R10 | Dorado0.4.3 | HAC | r1041_e82_400bps_hac_v4.1.0 |
+| R10 | Dorado0.4.3 | SUP | r1041_e82_400bps_sup_v4.1.0 |
+
+
+
 
 # Repeat our results
 To repeat our results, please install the forementioned conda environment first and run
