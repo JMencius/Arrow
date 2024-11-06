@@ -19,8 +19,10 @@ conda env create -f caln50.yaml;
 ```
 
 
-# Pipeline
-We enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
+# Pipelines
+0. Make sure you have run the pipeline in ../../yak/scripts/README.md. The evaluation is based on yak using short-read NGS data.
+
+1. Enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
 ```
 bash R9G4FAST_shasta_yak_NG50.sh;
 bash R9G4HAC_shasta_yak_NG50.sh;
@@ -31,6 +33,14 @@ bash R10D0FAST_shasta_yak_NG50.sh;
 bash R10D0HAC_shasta_yak_NG50.sh;
 bash R10D0SUP_shasta_yak_NG50.sh;
 ```
+
+# Shasta parameters
+The correct Shasta parameters for different flowcell and basecaller versions of HG002 data is listed below.
+|:---:|:---|:---:|:---:|
+| R9 | Guppy4.2.2 | HAC | Nanopore-Sep2020 |
+| R9 | Guppy6.3.8 | SUP | Nanopore-May2022 |
+| R10 | Dorado0.4.3 | SUP | Nanopore-R10-Fast-Nov2022 |
+
 
 # Results descriptions
 1. Naming pattern 
