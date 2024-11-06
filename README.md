@@ -1,8 +1,8 @@
-# LongBow manuscript code repository
-This repository archive the pipeplines and codes in the LongBow manuscript.
+# LongBow Manuscript Code Repository
+This repository archives the pipeplines and codes in the LongBow manuscript.
 
 # Contents
-The contents are organized into eight folders. Please feel free to click on any title to view the detailed `README.md`.
+The contents are organized into seven main folders. Please feel free to click on any title to view the detailed `README.md`.
 
 1. [SRA_status](./SRA_status/scripts/README.md)
 
