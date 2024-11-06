@@ -1,5 +1,5 @@
-# LongBow Manuscript Code Repository
-This repository archives the pipelines and codes in the LongBow manuscript.
+# Arrow
+This repository archives the pipelines and source codes used in the LongBow manuscript.
 
 # Contents
 The contents are organized into seven main folders. Please feel free to click on any title to view the detailed `README.md`.
