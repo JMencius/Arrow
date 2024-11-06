@@ -1,4 +1,4 @@
-# LongBow manuscript code
+# LongBow manuscript code repository
 This repository archive the pipeplines and codes in the LongBow manuscript.
 
 # Contents
