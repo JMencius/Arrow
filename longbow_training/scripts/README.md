@@ -1,4 +1,4 @@
-# Desciptions
+# Description
 This directory archives the pipelines for LongBow model training. Each model includes QV distribution and autocorrelation in `.csv` file. 
 For autocorrelation, a leave-one-out test is also included to get the best lag.
 
@@ -11,7 +11,7 @@ conda env create -f longbow.yaml;
 
 # Training data
 Nanopore raw data of 7 model organism, namely _Homo sapiens_, _Mus musculus_, _Danio rerio_, _Drosophila melanogaster_, _Arabidopsis thaliana_, _Saccharomyces cerevisiae_, and _Escherichia coli_ were used for LongBow training.
-| index |Species name | Flwocell type | Flowcell type (FLO-) | Sequencing kit (SQK-) | Source |
+| index |Species name | Flowcell type | Flowcell type (FLO-) | Sequencing kit (SQK-) | Source |
 |:--:|:-------:|:---:|:---:|:---:|:---:|
 | 1 | _Homo sapiens_ | R10 | PRO114M | LSK114 | [GIAB HG004](https://labs.epi2me.io/askenazi-kit14-2022-12/) |
 | 2 | _Homo sapiens_ | R10 | PRO114M | LSK114 | [GIAB HG002](https://labs.epi2me.io/giab-2023.05/) |
@@ -26,7 +26,7 @@ Nanopore raw data of 7 model organism, namely _Homo sapiens_, _Mus musculus_, _D
 | 11 | _Saccharomyces cerevisiae_ | R9 | MIN106 | LSK109 | [SRA database : SRR14729830](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR14729830&display=data-access) |
 | 12 | _Escherichia coli_ | R9 | MIN106 | PBK004 | [Zenodo record 7388709](https://zenodo.org/records/7388709) |
 
-For the basecalling of the training data we use the following combination. Python script `get_QV_autocorrelation_model.py` and `autocorrelation_LOO_lag.py` is used to calculate the model of the basecalled FASTQ file and produce the corresponding 120 model csv files in `../data/model`.
+For the basecalling of the training data we use the following combination. Python script `get_QV_autocorrelation_model.py` and `autocorrelation_LOO_lag.py` are used to calculate the model of the basecalled FASTQ file and produce the corresponding 120 model csv files in `../data/model`.
 | Flowcell type | Basecaller and version | Basecalling mode |
 |:---:|:---:|:---:|
 | R9 | Guppy2.3.7 | \ |
@@ -50,4 +50,4 @@ python autocorrelation_LOO_lag.py -i ../data/model -o ../results/R10D0_autocorre
 ```
 
 # Result description
-1. The result of the LOO test is located in `../results`, 5 txt files record the accuracy verus different lag in different basecalling configurations.
+1. The result of the LOO test is located in `../results`, 5 txt files record the accuracy verus different lags in different basecalling configurations.
