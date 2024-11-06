@@ -1,4 +1,5 @@
-# LongBow
+# LongBow manuscript code
+This repository archive the pipeplines and codes in the manuscript of LongBow.
 
 # Content
 | Folder | Contents |
@@ -27,7 +28,7 @@ To run the Python scripts we provided, one should use Python 3.7 or higher versi
 Most of the following softwares are installed through `Conda` environment. We have run test on Conda version `24.1.2` and version `24.4.0`.
 <mark>We strongly recommend Conda version >= `24.1.x` installed.</mark>
 
-### Version list
+### Software version list
 | Software | Version |
 |:---:|:---:|
 | Artic | 1.2.4 |
