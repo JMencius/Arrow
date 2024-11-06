@@ -6,7 +6,7 @@ The contents are organized into eight folders. Please feel free to click on any 
 
 1. [SRA_status](./SRA_status/scripts/README.md)
 
-  Status evaluation of Oxford nanopore data in the SRA database
+    Status evaluation of Oxford nanopore data in the SRA database
 - ONT raw data availability in SRA database
 - BAM file availability in SRA datbase
 - flowcell and basecaller version labelling in SRA database
