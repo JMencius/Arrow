@@ -25,8 +25,8 @@ usage: hexdump [-bcCdovx] [-e fmt] [-f fmt_file] [-n length]
 ```
 If you don't have `hexdump` in your Linux distributions, on Ubuntu try
 ```
-sudo apt-get update
-sudo apt-get install bsdmainutils
+sudo apt-get update;
+sudo apt-get install bsdmainutils;
 ```
 
 
