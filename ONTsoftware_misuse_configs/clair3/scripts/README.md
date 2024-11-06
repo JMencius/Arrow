@@ -19,7 +19,7 @@ conda activate singularity-env
 singularity pull docker://hkubal/clair3:v1.0.4
 
 ```
-you also need to download several models manually because not all models were contained in the latest package(see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared:
+you also need to download several models manually because not all models were contained in the latest package(see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared at ../image/clair3.sif
 
 3. hap.py
 ```bash
