@@ -15,13 +15,18 @@ conda env create -f python3-env.yaml;
 ```
 hexdump --version;
 ```
-example output if you have have hexdump installed
+example output if you have `hexdump` installed
 ```
 hexdump: invalid option -- '-'
 usage: hexdump [-bcCdovx] [-e fmt] [-f fmt_file] [-n length]
                [-s skip] [file ...]
        hd      [-bcdovx]  [-e fmt] [-f fmt_file] [-n length]
                [-s skip] [file ...]
+```
+If you don't have `hexdump` in your Linux distributions, on Ubuntu try
+```
+sudo apt-get update
+sudo apt-get install bsdmainutils
 ```
 
 
