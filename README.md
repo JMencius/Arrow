@@ -16,27 +16,27 @@ The contents are organized into eight folders. Please feel free to click on any 
 2. ONTsoftware_misuse_configs
 
     Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
-- Clair3
-- Shasta
-- Medaka
+- [Clair3](./ONTsoftware_misuse_configs/clair3/scripts/README.md)
+- [Shasta](./ONTsoftware_misuse_configs/shasta/scripts/README.md)
+- [Medaka](./ONTsoftware_misuse_configs/medaka/scripts/README.md)
 
   
-3. LongBow_training
+3. [LongBow_training](./longbow_training/scripts/README.md)
 
     Training code of LongBow
 
 
-4. LongBow_testing
+4. [LongBow_testing](,.longbow_testing/scripts/README.md)
 
     Testing LongBow on 66 groups of ONT data and human ONT SRA data.
 
 
-5. LongBowDB
+5. [LongBowDB](./longbowDB/LongBowDB-website/index.html)
 
-    Source code for LongBowDB
+    Source code for the graphical user interface LongBowDB
 
 
-6. COGUK
+6. [COGUK](./COGUK/scripts/README.md)
 
     Reanalysis of COGUK SARS-CoV-2 data
 
@@ -44,9 +44,9 @@ The contents are organized into eight folders. Please feel free to click on any 
 7. Others
 
     Other pipelines in the manuscript
-- Downsampling evaluation
-- Close Guppy version similarity
-- SRA fast5 data simplex and duplex precentage
+- [Downsampling evaluation](./Others/downsampling_test/scripts/README.md)
+- [Close Guppy version similarity](./Others/guppy_similarity/scripts/README.md)
+- [SRA fast5 data simplex and duplex precentage](./Others/sra_simplex_duplex/scripts/README.md)
 
 
 
