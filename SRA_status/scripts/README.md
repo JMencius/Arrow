@@ -3,18 +3,18 @@
 ## Descriptions
 This directory contains 4 independent pipelines for
 
-1. Raw nanopore data(FAST5/POD5) availabilty in SRA database
+1. Raw nanopore data(FAST5/POD5) availability in SRA database
 
     Please refer to `raw_ONTdata_search.md`
 
-2. BAM availablity in SRA database
+2. BAM availability in SRA database
 
     Please refer to `sra_bam_availability.md`
 
 
 3. Basecaller version and flowcell version mentioned in SRA database metadata
 
-    We use a multi-thread Python script to analyze the entire metadat set of SRA. 
+    We use a multi-thread Python script to analyze the entire metadata set of SRA. 
 
     Specifically, this script first filtered the total SRA Runs based on two conditions: 
 
@@ -24,7 +24,7 @@ This directory contains 4 independent pipelines for
 
 4. Random downsampling SRA run
 
-    Plase refer to `SRA_random_100sample.md`
+    Please refer to `SRA_random_100sample.md`
 
 ## Execution environments
 Python3 virtual environment
@@ -35,7 +35,7 @@ conda env create -f python3-env.yaml;
 
 
 ## Reproduce results
-1. To reproduce our results for `pipeline 1` and `pipeline 2`, please navigae to `SRA advance search` in
+1. To reproduce our results for `pipeline 1` and `pipeline 2`, please navigate to `SRA advance search` in
 ```
 https://www.ncbi.nlm.nih.gov/sra/advanced
 ```
