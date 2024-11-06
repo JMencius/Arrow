@@ -14,6 +14,10 @@ conda env create -f longbow.yaml;
 
 
 # Pipelines
+## 0. Install LongBow in your environment
+Please following the instruction in `longbow2.2.0/README.md`
+To be notice, the longbow code is not provided in this repository.
+
 ## 1. Test LongBow on our own basecalled data
 ### 1.1 Run LongBow on our own basecalled data
 ```bash
