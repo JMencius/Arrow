@@ -12,6 +12,14 @@ Use the `LongBow` conda environment
 conda env create -f longbow.yaml;
 ```
 
+# Data
+Please download the 66 groups of test data we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipeline.
+```bash
+mkdir -p ../data;
+## Download the data interactively
+## decompression
+tar -zxvf sixty_six_samples.tar.gz;
+```
 
 # Pipelines
 ## 0. Install LongBow in your environment
