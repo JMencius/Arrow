@@ -22,4 +22,4 @@ The proportion of Raw nanopore data(FAST5/POD5) availability in SRA database is 
 
 
 ## Note
-<mark> Note: one may get different exact number of **N<sub>raw</sub>** or **N<sub>total</sub>**, due to different search date, some accession of the SRA will be deleted or added, so the exact number changes a little bit, but the proportion will remain comparable </mark> 
+<mark> Note: one may get different exact number of **N<sub>raw</sub>** or **N<sub>total</sub>**, due to different search date, some accession of the SRA will be deleted or added, causing slight changes in total counts, but the proportion will remain comparable. </mark>
