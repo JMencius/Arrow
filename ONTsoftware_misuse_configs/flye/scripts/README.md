@@ -25,6 +25,18 @@ bash flye_draft.sh
 bash draft_QV_calculation.sh
 ```
 
+# Flye parameters
+Flye has different parameters for different ONT data. The following listed the parameter we used to assemble the draft.
+| Flowcell | Basecaller | Basecalling mode | Flye parameter |
+|:---:|:---:|:---:|:---:|
+| R9 | Guppy4.2.2 | FAST | --nano-raw |
+| R9 | Guppy4.2.2 | HAC | --nano-raw |
+| R9 | Guppy6.3.8 | FAST | --nano-raw |
+| R9 | Guppy6.3.8 | HAC | --nano-hq |
+| R9 | Guppy6.3.8 | SUP | --nano-hq |
+| R10 | Dorado 0.4.3 | HAC | --nano-hq --read-error 0.03 |
+| R10 | Dorado 0.4.3 | SUP | --nano-hq --read-error 0.03 |
+
 
 # Results descriptions
 For each directory in `../results`, such as `R10D0HAC`, is the output folder for `flye` *de novo* assembly.
