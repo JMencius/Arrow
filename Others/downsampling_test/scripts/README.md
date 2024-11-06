@@ -1,11 +1,11 @@
-# Descriptions
-This diectory archives the pipeline for data downsampling.
+# Description
+This directory archives the pipeline for data downsampling.
 
-The purpose of testing downsampling is to check the effect of downsampling to the two main properties of LongBow, Q score disribution and Q score autocorrelation.
+The purpose of testing downsampling is to check the effect of downsampling to the two main properties of LongBow, Q score distribution and Q score autocorrelation.
 
 
 # Execution environments
-1. The downsampling process utilize `seqtk` 1.3-r106. To recreate the environment, run
+1. The downsampling process utilize `seqtk` version 1.3-r106. To recreate the environment, run
 ```bash
 conda env create -f seqtk.yaml;
 ```
