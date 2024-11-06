@@ -50,7 +50,7 @@ The contents are organized into eight folders. Please feel free to click on any 
 
 
 
-# Programming language and software
+# Requirement
 ## OS requirement
 Codes were tested on _Linux_ operating systems.
 Linux: Redhat enterprise linux 8
@@ -58,12 +58,12 @@ Linux: Ubuntu 22.04.1
 
 
 ## Software requirement
-### Programming language
-To run the Python scripts we provided, one should use Python 3.7 or higher version. 
-
 ### Conda version
 Most of the following softwares are installed through `Conda` environment. We have run test on Conda version `24.1.2` and version `24.4.0`.
 <mark>We strongly recommend Conda version >= `24.1.x` installed.</mark>
+
+### Programming language
+To run the Python scripts we provided, one should use Python 3.7 or higher version. 
 
 ### Software version list
 | Software | Version |
