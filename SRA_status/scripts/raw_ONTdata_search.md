@@ -21,13 +21,5 @@ The proportion of Raw nanopore data(FAST5/POD5) availability in SRA database is 
 3. Summarize the numbers of SRR list in each category.
 
 
-## Results 
-| Category | CSV file | Count |
-|:---:|:---:|:---:|
-| Total number of ONT data | `../results/SRA_ONT_ALL_accession_list.csv` | 683,884 |
-| Raw nanopore data available | `../results/ONT_RAW_accession_list.csv` | 12,330 |
-
-
-
 ## Note
-<mark> Note: one may get different exact number of **N<sub>raw</sub>** or **N<sub>total</sub>**, due to different search date, some accession of the SRA will be deleted or added, so the exact number changes a little bit. </mark>
+<mark> Note: one may get different exact number of **N<sub>raw</sub>** or **N<sub>total</sub>**, due to different search date, some accession of the SRA will be deleted or added, so the exact number changes a little bit, but the proportion will remain comparable </mark> 
