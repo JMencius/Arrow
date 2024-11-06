@@ -1,15 +1,7 @@
 #!/bin/bash
 
 # Pipeline
-
-mkdir -p ../results/model;
-
-
-# 1. Calculate each model for every basecalling config for all the species
-bash calculate_longbow_model_csv.sh
-
-
-# 2. Conduct leave-one-out test to determine the best lag for R9G4, R9G6, R9D0, R10G6, and R10D0
+# Conduct leave-one-out test to determine the best lag for R9G4, R9G6, R9D0, R10G6, and R10D0
 
 conda_base=$(conda info --base);
 source "$conda_base"/etc/profile.d/conda.sh;
