@@ -11,5 +11,5 @@ base=$(dirname "$script_dir")
 for i in ../data/G4G6_passonly/*.fastq; do
 	echo "$i";
 	name=$(basename "$i")
-	python ../../longbow_code/longbow2.2.0/longbow.py -t 32 -i "$i" -b -o "$base"/results/own_called/"$name".json;
+	longbow -t 32 -i "$i" -b -o "$base"/results/own_called/"$name".json;
 done
