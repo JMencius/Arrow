@@ -1,8 +1,8 @@
-# BAM availabilty in SRA database
+# BAM availability in SRA database
 We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanced) in SRA database. <br>
 
 ## Search command
-### BAM availablity in all species
+### BAM availability in all species
 1. Search command to obtain the total number of ONT data in all species
 ```
 (("oxford nanopore"[Platform]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date]) 
@@ -13,7 +13,7 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 (("oxford nanopore"[Platform]) AND "filetype bam"[Properties]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date])
 ```
 
-### BAM availablity in species excluding SARS-CoV-2
+### BAM availability in species excluding SARS-CoV-2
 1. Search command to obtain the total number of ONT data in species excluding SARS-CoV-2
 ```
 (("oxford nanopore"[Platform]) NOT Severe acute respiratory syndrome coronavirus 2[Organism]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date]) 
@@ -27,11 +27,11 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 ## Workflow
 1. Conduct each search command.
 2. Use `Send to`-`File`-`Format Accession List` to download the SRR list of each search.
-3. Summarize the numbers of SRR list in each categories.
+3. Summarize the numbers of SRR list in each category.
 
 
 ## Results 
-1. BAM availablity in all species
+1. BAM availability in all species
 | Category | CSV file | Count |
 |:---:|:---:|:---:|
 | Total number of ONT data | `../results/SRA_ONT_ALL_accession_list.csv` | 683884 |
@@ -45,5 +45,5 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 
 
 
-## Notice
-<mark> Note: one may get different exact number may change due to different search date, some accession of the SRA will be deleted or added, so the exact number changes a little bit. </mark>
+## Note
+<mark> Note: one may get different exact number may change due to different search date, some accession of the SRA will be deleted or added, causing slight changes in total counts, but the proportion will remain comparable. </mark>
