@@ -5,26 +5,26 @@ This directory contains 4 independent pipelines for
 
 1. Raw nanopore data(FAST5/POD5) availabilty in SRA database
 
-Please refer to `raw_ONTdata_search.md`
+    Please refer to `raw_ONTdata_search.md`
 
 2. BAM availablity in SRA database
 
-Please refer to `sra_bam_availability.md`
+    Please refer to `sra_bam_availability.md`
 
 
 3. Basecaller version and flowcell version mentioned in SRA database metadata
 
-We use a multi-threaded Python script to analyze the entire metadat set of SRA. 
+    We use a multi-thread Python script to analyze the entire metadat set of SRA. 
 
-Specifically, this script first filtered the total SRA Runs based on two conditions: 
+    Specifically, this script first filtered the total SRA Runs based on two conditions: 
 
-- the publication date of the SRA Run falls within the range of “2010/01/01” to “2024/01/09”,
-- the sequencing platform is Oxford Nanopore. Multiple regular expressions were then employed to identify keywords related to flowcell or basecaller configuration information within the XML files of the filtered SRA Runs. 
+    - the publication date of the SRA Run falls within the range of “2010/01/01” to “2024/01/09”,
+    - the sequencing platform is Oxford Nanopore. Multiple regular expressions were then employed to identify keywords related to flowcell or basecaller configuration information within the XML files of the filtered SRA Runs. 
 
 
 4. Random downsampling 100 SRA run for label checking
 
-Plase refer to `SRA_random_100sample.md`
+    Plase refer to `SRA_random_100sample.md`
 
 ## Execution environments
 Python3 virtual environment
