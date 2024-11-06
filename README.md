@@ -15,7 +15,7 @@ The contents are organized into eight folders. Please feel free to click on any 
 
 2. ONTsoftware_misuse_configs
 
-  Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
+    Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
 - Clair3
 - Shasta
 - Medaka
@@ -23,27 +23,27 @@ The contents are organized into eight folders. Please feel free to click on any 
   
 3. LongBow_training
 
-  Training code of LongBow
+    Training code of LongBow
 
 
 4. LongBow_testing
 
-  Testing LongBow on 66 groups of ONT data and human ONT SRA data.
+    Testing LongBow on 66 groups of ONT data and human ONT SRA data.
 
 
 5. LongBowDB
 
-  Source code for LongBowDB
+    Source code for LongBowDB
 
 
 6. COGUK
 
-  Reanalysis of COGUK SARS-CoV-2 data
+    Reanalysis of COGUK SARS-CoV-2 data
 
 
 7. Others
 
-  Other pipelines in the manuscript
+    Other pipelines in the manuscript
 - Downsampling evaluation
 - Close Guppy version similarity
 - SRA fast5 data simplex and duplex precentage
