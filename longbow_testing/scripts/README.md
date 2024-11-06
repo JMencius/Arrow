@@ -1,5 +1,5 @@
 # Description
-This directory archives the testing pipeline to evaluate the `LongBow` performance. The test data containing two seperate categories: 
+This directory archives the testing pipeline to evaluate the `LongBow` performance. The test data containing two separate categories: 
 
 1. Our own basecalled data using raw FAST5/POD5 data; 
 
@@ -15,7 +15,7 @@ conda env create -f longbow.yaml;
 
 # Pipelines
 ## 0. Install LongBow in your environment
-Please following the instruction in `longbow2.2.0/README.md`
+Please follow the instruction in `longbow2.2.0/README.md`
 To be notice, the longbow code is not provided in this repository.
 
 ## 1. Test LongBow on our own basecalled data
@@ -40,7 +40,7 @@ bash download_all_sra_ont.sh;
 bash run_sra_ont_longbow.sh;
 ```
 
-### 2.3 Summarize the human ONT SRA results
+### 2.3 Summarize human ONT SRA results
 ```
 bash analysis_sra_ont.sh;
 ```
