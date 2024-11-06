@@ -16,7 +16,7 @@ conda env create -f yak.yaml;
 
 # Pipeline
 0. Make sure you have run the pipeline in `../../flye/scripts/README.md` and `../../yak/scripts/README.md`
-The genome draft of `Medaka` polishing is based on `flye` contigs. The evaluation is based on `yak` using short-read NGS data.
+The genome draft of `Medaka` polishing is based on `flye` contigs. The evaluation is performed using yak with short-read NGS data.
 
 
 1. Run `Medaka` polishing for R9G4FAST, R9G4HAC, R9G6FAST, R9G6HAC, R9G6SUP, R10D0HAC, and R10D0SUP data
@@ -24,7 +24,7 @@ The genome draft of `Medaka` polishing is based on `flye` contigs. The evaluatio
 
 
 2. Run `yak` evaluation for polished data
-`bash cal_poshlied_yakQV.sh;`
+`bash cal_polished_yakQV.sh;`
 
 # Medaka models
 The correct Medaka models for different flowcell and basecaller versions of HG002 data is listed below.
@@ -46,4 +46,4 @@ To repeat our results, please install the forementioned conda environment first 
 ```
 bash ./run_all.sh;
 ```
-
+Note that, Medaka is relative slow. We finished all 49 groups of polishing with 32 cores and an Nvidia RTX A5000 in 3 weeks.
