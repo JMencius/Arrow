@@ -11,12 +11,12 @@ conda env create -f ./envs/minimap2.yaml;
 Prepare clair3 environment (docker image, for example) and run the image following https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#option-2-singularity
 Make sure you have already installed docker or singularity, and download the image
 ```bash
-conda config --add channels defaults
-conda create -n singularity-env -c conda-forge singularity -y
-conda activate singularity-env
+conda config --add channels defaults;
+conda create -n singularity-env -c conda-forge singularity -y;
+conda activate singularity-env;
 
 # singularity pull docker pre-built image
-singularity pull docker://hkubal/clair3:v1.0.4
+singularity pull docker://hkubal/clair3:v1.0.4;
 
 ```
 You also need to download several models manually because not all models were contained in the latest package(see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared at ../image/clair3.sif
@@ -45,22 +45,22 @@ According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the 
 # Pipelines
 1. Prepare reference
 ```bash
-bash ./prepare/prepare.sh
+bash ./prepare/prepare.sh;
 ```
 
 2. Run alignment
 ```bash
-bash ./alignment/alignment.sh
+bash ./alignment/alignment.sh;
 ```
 
 3. Run Clair3
 ```bash
-bash ./variant_calling/clair3.sh
+bash ./variant_calling/clair3.sh;
 ```
 
 4. Run hap.py
 ```bash
-bash ./benchmark/benchmark.sh
+bash ./benchmark/benchmark.sh;
 ```
 
 
