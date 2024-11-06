@@ -31,19 +31,19 @@ conda env create -f ./envs/bioawk.yaml;
 
 # Pipelines
 1. Preprocess of COG-UK EBI metadata
-Purpose: COG-UK sample id with both NGS and ONT sequencing, and retrive the download links for raw ONT sequence and analysis files (NGS-assembled consensus sequence, ONT-assembled consensus sequence)
+Purpose: COG-UK sample id with both NGS and ONT sequencing, and retrieve the download links for raw ONT sequence and analysis files (NGS-assembled consensus sequence, ONT-assembled consensus sequence)
 ```bash
 bash ./ebi_preprocess_scripts/preprocess.sh;
 ```
 
 2. Download data
-Download raw ONT sequencing data, NGS-assembled consensus sequence, and ONT-assembled consensus sequence, and COVID19 reference files, Artic primer schme V3 files.
+Download raw ONT sequencing data, NGS-assembled consensus sequence, and ONT-assembled consensus sequence, and COVID19 reference files, Artic primer scheme V3 files.
 ```bash
 bash ./download_scripts/download_all.sh;
 ```
 
 3. LongBow config prediction
-Run LongBow on all raw ONT sequencing data and retrived the predicted basecalling configuration
+Run LongBow on all raw ONT sequencing data and retrieved the predicted basecalling configuration
 ```bash
 bash ./longbow_pred_script/run_longbow.sh;
 ```
@@ -85,14 +85,14 @@ Include the `LongBow` prediction results of each 269 FASTQ files, in our case, i
 Include the ERR id, random seeds, and random `Medaka` mode for each ERR data.
 
 4. `../results/ERR*`
-In each `ERR*` files contains 4 subdiretory: longbow: LongBow predicted Medaka model, default: default Medaka model, random: random Medaka model listed in `./ERR_list_models.txt`, Artex: results of Artex pipelines
+In each `ERR*` files contains 4 subdirectory: longbow: LongBow predicted Medaka model, default: default Medaka model, random: random Medaka model listed in `./ERR_list_models.txt`, Artex: results of Artex pipelines
 
 5. `../results/F1_score_file`
 Include the F1 score details of each separate mode of SNP and INDEL.
 
 
 # Repeat our results
-To repeat our results, please install the forementioned conda environment and run
+To repeat our results, please install the previously mentioned conda environment and run
 ```
 bash ./run_all.sh;
 ```
