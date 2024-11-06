@@ -7,7 +7,9 @@ The search command in `SRA advanced serach` is
 The export accession file from the following search is in ../data/SraAccList_NOCOVID_20240109.csv
 
 ## Random select 1000 SRA run
+```
 python random_select_SRARUN.py -i ../data/SraAccList_NOCOVID_20240109.csv -o ../results/Sampled_1000_srarun.txt;
+```
 
 We manully evaluate the first 100 runs in `Sampled_1000_srarun.txt`.
 
