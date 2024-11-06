@@ -16,7 +16,8 @@ conda env create -f longbow.yaml;
 Please download the 66 groups of test data we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipeline.
 ```bash
 mkdir -p ../data;
-## Download the data interactively
+cd ../data;
+## Download the FASTQ file through FTP link in the ScienceDB
 ## decompression
 tar -zxvf sixty_six_samples.tar.gz;
 ```
