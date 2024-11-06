@@ -3,7 +3,7 @@ This folder archives the pipeline for checking simplex or duplex configurations 
 
 
 # Execution environments
-1. Python Scripts for download and analysis
+1. Python scripts for download and analysis
 These scripts require Python 3.7 or higher and a Linux distribution with hexdump installed. You can verify hexdump installation by running the following command in Linux
 ## Python environment
 To recreate the same Python running `conda` environment use:
