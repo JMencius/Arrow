@@ -26,7 +26,7 @@ The contents are organized into seven main folders. Please feel free to click on
     Training code of LongBow
 
 
-4. [LongBow_testing](.longbow_testing/scripts/README.md)
+4. [LongBow_testing](./longbow_testing/scripts/README.md)
 
     Testing LongBow on 66 groups of ONT data and human ONT SRA data.
 
