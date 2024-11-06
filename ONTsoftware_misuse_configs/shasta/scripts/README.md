@@ -57,7 +57,7 @@ NL      50      12529106        66
 ```
 
 4. Yak QV score
-`yak.txt` holds the `Yak QV score` result in the last line
+`yak.txt` holds the `Yak QV score` result in the last line of the file
 For example:
 ```
 QV      28.775  29.115
@@ -71,3 +71,4 @@ To repeat our results, please install the aforementioned conda environment first
 bash ./run_all.sh;
 ```
 
+<mark>Shasta is a memory-intensive program. Please ensure you have at least 1 TB of physical RAM to successfully repeat our results.</mark>
