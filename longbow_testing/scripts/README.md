@@ -14,6 +14,8 @@ conda env create -f longbow.yaml;
 
 # Data
 Please download the 66 groups of test data we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipeline.
+
+You can follow the instruction in [here](../../ScienceDB/README.md) to download the data we shared.
 ```bash
 mkdir -p ../data;
 cd ../data;
