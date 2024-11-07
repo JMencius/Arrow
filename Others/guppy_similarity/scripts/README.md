@@ -18,6 +18,8 @@ conda env create -f ont-longbow.yaml;
 # Data
 Please download the `HG002_R9_guppy_similarity.tar.gz` file we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipelines.
 The files contained the basecalled FASTQ of HG002 data.
+
+You can follow the instruction in [here](../../ScienceDB/README.md) to download the data we shared.
 ```bash
 mkdir -p ../data;
 cd ../data;
