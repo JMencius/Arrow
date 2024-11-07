@@ -1,8 +1,9 @@
-# Descriptions 
+# Shasta
+## Descriptions 
 This directory archives the pipeline which we benchmark shasta *de novo* assembly with different config.
 
 
-# Execution environments
+## Execution environments
 1. For `Shasta`, we download the `Shasta` binary executable from GitHub <https://github.com/paoloshasta/shasta/releases> version 0.11.0
 ```bash
 wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux-0.11.0;
@@ -19,11 +20,11 @@ conda env create -f caln50.yaml;
 ```
 
 
-# Pipelines
-0. Make sure you have run the pipeline in ../../yak/scripts/README.md. The evaluation is based on yak using short-read NGS data.
+## Pipelines
+1. Make sure you have run the pipeline in ../../yak/scripts/README.md. The evaluation is based on yak using short-read NGS data.
 
-1. Enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
-```
+2. Enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
+```bash
 bash R9G4FAST_shasta_yak_NG50.sh;
 bash R9G4HAC_shasta_yak_NG50.sh;
 bash R9G6FAST_shasta_yak_NG50.sh;
@@ -34,7 +35,7 @@ bash R10D0HAC_shasta_yak_NG50.sh;
 bash R10D0SUP_shasta_yak_NG50.sh;
 ```
 
-# Shasta parameters
+## Shasta parameters
 The correct Shasta parameters for different flowcell and basecaller versions of HG002 data is listed below.
 |:---:|:---|:---:|:---:|
 | R9 | Guppy4.2.2 | HAC | Nanopore-Sep2020 |
@@ -42,7 +43,7 @@ The correct Shasta parameters for different flowcell and basecaller versions of 
 | R10 | Dorado0.4.3 | SUP | Nanopore-R10-Fast-Nov2022 |
 
 
-# Results descriptions
+## Results descriptions
 1. Naming pattern 
 For example: `R10D0FAST_R9G4` means `R10D0FAST` basecalled FASTQ data using `shasta` config for `R9G4` data.
 
@@ -65,7 +66,7 @@ QV      28.775  29.115
 We record the second value (29.115), which is the `adjusted_quality_value` reported by `Yak`.
 
 
-# Repeat our results
+## Repeat our results
 To repeat our results, please install the aforementioned conda environment first and run
 ```
 bash ./run_all.sh;
