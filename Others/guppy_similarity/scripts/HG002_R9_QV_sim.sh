@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# build directory strucutre
+mkdir -p ../results/QV_similarity;
+
+
 conda_base=$(conda info --base);
 source "$conda_base"/etc/profile.d/conda.sh;
 conda activate ont-longbow;
