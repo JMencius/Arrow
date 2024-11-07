@@ -67,7 +67,7 @@ bash analysis_sra_ont.sh;
 
 
 # Repeat our results
-To repeat our results, please install the forementioned conda environment first and run
+To repeat our results, please install the forementioned conda environment and download the data we share, then run
 ```bash
 bash ./run_all.sh;
 ```
