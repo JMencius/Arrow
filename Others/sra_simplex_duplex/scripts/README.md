@@ -31,22 +31,34 @@ sudo apt-get install bsdmainutils;
 
 
 # Pipelines
-1. Partial Download of FAST5 Data
+1. Build directory structure
+```
+mkdir -p ../results;
+mkdir -p ../data;
+```
+
+2. Partial Download of FAST5 Data
 Due to the typically large size of FAST5 compressed files, only a portion of the data will be downloaded:
 ```
 python partial_download.py -i DNA_raw_20240109.txt -w ../data > ../results/download_log.txt;
 ```
 
 
-2. Preprocess and decompressing the download files
+3. Preprocess and decompressing the download files
 This step involves preprocessing the downloaded files:
 ```
 python hexdump_preprocess.py -w ../data;
 ```
 
 
-3. Analyzing FAST5 Files
+4. Analyzing FAST5 Files using hexdump
 This analysis extracts the `flowcell type`, `sequencing kit`, and `experiment time`, which are essential for determining whether the configuration is simplex or duplex:
 ```
 python hexdump_check.py -i ../data -o ../results/sra_fast5_ano.txt > ../results/annotation.log;
+```
+
+# Repeat our results
+To repeat our results, please install the aforementioned conda environment first and run
+```
+bash ./run_all.sh;
 ```
