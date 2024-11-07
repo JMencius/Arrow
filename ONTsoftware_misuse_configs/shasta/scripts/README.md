@@ -47,9 +47,15 @@ bash R10D0SUP_shasta_yak_NG50.sh;
 
 ## Shasta parameters
 The correct Shasta parameters for different flowcell and basecaller versions of HG002 data is listed below.
+| Flowcell type | Basecaller | Basecalling model | Shasta parameter `--config` |
 |:---:|:---|:---:|:---:|
+| R9 | Guppy4.2.2 | FAST | Not available |
 | R9 | Guppy4.2.2 | HAC | Nanopore-Sep2020 |
+| R9 | Guppy6.3.8 | FAST | Not available |
+| R9 | Guppy6.3.8 | HAC | Not available |
 | R9 | Guppy6.3.8 | SUP | Nanopore-May2022 |
+| R10 | Dorado0.4.3 | FAST | Not available |
+| R10 | Dorado0.4.3 | HAC | Not available |
 | R10 | Dorado0.4.3 | SUP | Nanopore-R10-Fast-Nov2022 |
 
 
