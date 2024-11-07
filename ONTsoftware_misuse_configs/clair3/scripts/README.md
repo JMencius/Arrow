@@ -43,29 +43,29 @@ According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the 
 
 
 # Pipelines
-1. Prepare reference
+1. Prepare hg38 reference and build directory structure
 ```bash
 bash ./prepare/prepare.sh;
 ```
 
-2. Run alignment
+2. Run `Minimap2` alignmen
 ```bash
 bash ./alignment/alignment.sh;
 ```
 
-3. Run Clair3
+3. Run `Clair3` variant calling with different models
 ```bash
 bash ./variant_calling/clair3.sh;
 ```
 
-4. Run hap.py
+4. Run `hap.py` evaluation
 ```bash
 bash ./benchmark/benchmark.sh;
 ```
 
 
 # Results descriptions
-For each directory in `../results/alignment`, sequences are aligned to hg38.
+For each directory in `../results/alignment`, sequences are aligned to hg38 reference genome.
 
 For each directory in `../results/variant_calling`, variants are called by clair3 with different model pre-trained for different basecalling configuration.
 
