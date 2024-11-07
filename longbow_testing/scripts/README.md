@@ -19,7 +19,9 @@ You can follow the instruction in [here](../../ScienceDB/README.md) to download 
 ```bash
 mkdir -p ../data;
 cd ../data;
-## Download the FASTQ file through FTP link in the ScienceDB
+
+# Download the FASTQ file through ScienceDB
+
 ## decompression
 tar -zxvf sixty_six_samples.tar.gz;
 ```
