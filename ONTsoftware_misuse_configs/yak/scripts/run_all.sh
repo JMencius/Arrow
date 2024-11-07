@@ -2,9 +2,6 @@
 
 # Pipeline
 
-# build directory structure
-mkdir -p ../results;
-
 # 1. Download short reads data
 bash download_ngs.sh;
 
