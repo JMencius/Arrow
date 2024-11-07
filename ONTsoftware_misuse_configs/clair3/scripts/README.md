@@ -1,5 +1,5 @@
 # Description
-This directory archives the pipelines we used to run Clair3 and benchmark.
+This directory archives the pipelines we used to run `Clair`3 and benchmark the results to the gold standard truth.
 
 
 # Execution environments
@@ -19,7 +19,7 @@ conda activate singularity-env;
 singularity pull docker://hkubal/clair3:v1.0.4;
 
 ```
-You also need to download several models manually because not all models were contained in the latest package(see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared at ../image/clair3.sif
+You also need to download several models manually because not all models were contained in the latest package(see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared at `../image/clair3.sif` .
 
 3. hap.py
 ```bash
@@ -28,7 +28,7 @@ conda env create -f ./envs/hap.yaml;
 # Clair3 models
 According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the correct Clair3 models for different flowcell and basecaller versions of HG002 data is listed below, the download link is also provided.
 
-| Flowcell type | Basecaller | Basecalling mode | Correct clair3 model |
+| Flowcell type | Basecaller | Basecalling mode | Correct Clair3 model |
 |:---:|:---:|:---:|:-----:|
 | R9 | Guppy2.3.7 | \ | [r941_prom_hac_g238](http://www.bio8.cs.hku.hk/clair3/clair3_models/) |
 | R9 | Guppy4.2.2 | FAST | Not available |
@@ -43,7 +43,7 @@ According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the 
 
 
 # Pipelines
-1. Prepare hg38 reference and build directory structure
+1. Download data and build directory structure
 ```bash
 bash ./prepare/prepare.sh;
 ```
