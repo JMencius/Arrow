@@ -30,20 +30,5 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 3. Summarize the numbers of SRR list in each category.
 
 
-## Results 
-1. BAM availability in all species
-| Category | CSV file | Count |
-|:---:|:---:|:---:|
-| Total number of ONT data | `../results/SRA_ONT_ALL_accession_list.csv` | 683884 |
-| BAM file available | `../results/BAM_available_all_species.csv` | 162759 |
-
-2. BAM availablity in species excluding SARS-CoV-2
-| Category | CSV file | Count |
-|:---:|:---:|:---:|
-| Total number of ONT data (excluding SARS-CoV-2) | `../results/SRA_ONT_accession_exclude_SARSCoV2.csv` | 167446 |
-| BAM file available (excluding SARS-CoV-2) | `../results/BAM_available_exclude_SARSCoV2.csv` | 1694 |
-
-
-
 ## Note
 <mark> Note: one may get different exact number may change due to different search date, some accession of the SRA will be deleted or added, causing slight changes in total counts, but the proportion will remain comparable. </mark>
