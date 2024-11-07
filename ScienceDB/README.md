@@ -1,6 +1,6 @@
 # How to download data from ScienceDB
 ## Introduction
-Our basecalled data is shared via ScienceDB, an open, trusted global database for data publishing. We selected ScienceDB over popular options like FigShare or Zenodo due to the large size of our data.
+Our basecalled data is shared via (ScienceDB)[https://www.scidb.cn/en], an open, trusted global database for data publishing. We selected ScienceDB over popular options like FigShare or Zenodo due to the large size of our data.
 
 ## Ways to download
 1. Web browser
