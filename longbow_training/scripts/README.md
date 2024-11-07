@@ -39,7 +39,12 @@ For the basecalling of the training data we use the following combination. Pytho
 
 
 # Pipelines
-1. Conduct leave-one-out(LOO) test to determine the best lag for R9G4, R9G6, R9D0, R10G6, and R10D0
+1. Build directory structure
+```bash
+mkdir -p ../results;
+```
+
+3. Conduct leave-one-out(LOO) test to determine the best lag for R9G4, R9G6, R9D0, R10G6, and R10D0
 ```bash
 python autocorrelation_LOO_lag.py -i ../data/model -o ../results/R9G4_autocorrelation_lag_accuracy.txt --subject R9G4;
 python autocorrelation_LOO_lag.py -i ../data/model -o ../results/R9G6_autocorrelation_lag_accuracy.txt --subject R9G6;
@@ -51,3 +56,12 @@ python autocorrelation_LOO_lag.py -i ../data/model -o ../results/R10D0_autocorre
 
 # Result description
 1. The result of the LOO test is located in `../results`, 5 txt files record the accuracy verus different lags in different basecalling configurations.
+
+## Repeat our results
+To repeat our results, please 
+1. Install the aforementioned conda environment.
+
+2. Run `run_all.sh`
+```bash
+bash ./run_all.sh;
+```
