@@ -14,7 +14,7 @@ wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux
 conda env create -f yak.yaml;
 ```
 
-3. For `calN50`, we download the release from github <https://github.com/lh3/calN50>, recreate the running virtual environmnet
+3. For `calN50`, we download the release from github <https://github.com/lh3/calN50>, to recreate our running virtual environment run:
 ```bash
 conda env create -f caln50.yaml;
 ```
