@@ -15,10 +15,10 @@ Numerous state-of-the-art algorithms for ONT data analysis such as sequence alig
 | [Dysgu](https://github.com/kcleal/dysgu?tab=readme-ov-file#calling-svs) | Variant calling | :white_check_mark: | | | | |
 | [nanomonsv](https://github.com/friend1ws/nanomonsv#get) | Variant calling | :white_check_mark: | :white_check_mark: | :white_check_mark:  | unspecified |  |
 | [Medaka](https://github.com/nanoporetech/medaka#models) | Variant calling | :white_check_mark: | :white_check_mark: | :white_check_mark: | FAST, HAC, SUP | |
-| [WhatsHap](https://github.com/whatshap/whatshap) | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
+| WhatsHap | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
 | [Margin](https://github.com/UCSC-nanopore-cgl/margin#parameter-files) | Haplotype phasing | :white_check_mark: | :white_check_mark: | :white_check_mark:  | unspecified |  |
-| [HapCut2](https://github.com/vibansal/HapCUT2) | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
-| [LongPhase](https://github.com/twolinin/longphase) | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
+| HapCut2 | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
+| LongPhase | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
 | [Flye/MetaFlye](https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md#oxford-nanopore) | Genome assembly | :white_check_mark: | :white_check_mark: | :white_check_mark: | HAC/SUP |  |
 | [Shasta](https://paoloshasta.github.io/shasta/Configurations.html) | Genome assembly | :white_check_mark: | :white_check_mark: | :white_check_mark: | HAC for Guppy4, SUP for Guppy6 | |
 | [Canu](https://canu.readthedocs.io/en/latest/tutorial.html) | Genome assembly | :white_check_mark: | | | | |
@@ -34,7 +34,6 @@ Numerous state-of-the-art algorithms for ONT data analysis such as sequence alig
 [3] Wtdbg2 depends on sequencing error rate, which is influenced by flowcell type and basecaller configuration.
 
 
-<a id="ont-software"></a>
 ## ONT software performances using the correct and wrong config
 We tested three popular ONT data analysis software which required flowcell type or basecaller to select the best model or choose the specific parameter using the widely used `HG002` data. 
 
