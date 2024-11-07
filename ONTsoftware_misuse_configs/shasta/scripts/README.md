@@ -23,7 +23,17 @@ conda env create -f caln50.yaml;
 ## Pipelines
 1. Make sure you have run the pipeline in ../../yak/scripts/README.md. The evaluation is based on yak using short-read NGS data.
 
-2. Enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
+2. Build directory structure and add execution permissions
+```bash
+# build directory structure
+for i in R9G4FAST R9G4HAC R9G6FAST R9G6HAC R9G6SUP R10D0FAST R10D0HAC R10D0SUP;do for j in R9G4 R9G6SUP R10;do mkdir -p ../results/"$i"_"$j"; done; done;
+
+# change the shasta permissions
+chmod +x ./shasta-Linux-0.11.1;
+chmod +x ./calN50.js;
+```
+
+3. Enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
 ```bash
 bash R9G4FAST_shasta_yak_NG50.sh;
 bash R9G4HAC_shasta_yak_NG50.sh;
