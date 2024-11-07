@@ -4,10 +4,10 @@ Our basecalled data is shared via ScienceDB, an open, trusted global database fo
 
 ## Ways to download
 1. Web browser
-    This method allows for `anonymous` downloading. Simply open the shared link in a web browser and click on the download link to access the data.
+    This method allows for `anonymous` downloading. Simply open the shared link in a web browser and click on the download (<span style="color:blue">blue square</span> in the following figure) to access the data.
     ![fig1](./sciencdb_fig1.png)
 
 
    
-2. FTP
-   This method requires Login to the ScienceDB
+2. FTP server
+   This method first requires login to `ScienceDB`. Then click the ``
