@@ -38,11 +38,22 @@ The correct Medaka models for different flowcell and basecaller versions of HG00
 | R10 | Dorado0.4.3 | HAC | r1041_e82_400bps_hac_v4.1.0 |
 | R10 | Dorado0.4.3 | SUP | r1041_e82_400bps_sup_v4.1.0 |
 
+# Result description
+1. Naming pattern For example: R9G4FAST_R9G4HAC means R9G4FAST basecalled FASTQ data using Medaka config for R9G4HAC.
+2. Polished QV shift will be in `./QVshift.csv`, the description of each column is as follow:
+
+| Column index | Column name | Column description |
+|:---:|:---:|:---:|
+| 1 | basecalled | The basecalling configuration for the input FASTQ | 
+| 2 | polished contig | Medaka model used for genome polishing |
+| 3 | draft QV | Yak QV score for the flye-assembled draft |
+| 4 | polished QV | Yak QV score for the polished contig |
+| 5 | QV shift | QV shift = polished QV - draft QV |
 
 
 
 # Repeat our results
-To repeat our results, please install the forementioned conda environment first and run
+To repeat our results, please install the forementioned conda environment first and  make sure you have run the pipeline in `../../flye/scripts/README.md` and `../../yak/scripts/README.md`, then run
 ```
 bash ./run_all.sh;
 ```
