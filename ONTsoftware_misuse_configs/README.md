@@ -1,6 +1,6 @@
-# ONT software misuse config or models
+# ONT software misuse config or model
 
-## ONT softwares which requires flowcell or basecaller info to set the correct config
+## ONT softwares which requires flowcell or basecaller information
 Numerous state-of-the-art algorithms for ONT data analysis such as sequence alignment, variant calling, haplotype phasing, genome assembly and genome polishing have a direct or indirect reliance on the specific flowcell type and basecaller configuration.
 
 **The evidence of the needed information is given in the hyperlink attached to each software name.**
