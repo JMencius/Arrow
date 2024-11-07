@@ -24,7 +24,7 @@ This directory contains 4 independent pipelines for
 
 4. Random downsampling SRA run
 
-    Please refer to [SRA_random_100sample.md](./SRA_random_100sample.md)
+    Please refer to [SRA_random_1000sample.md](./SRA_random_1000sample.md)
 
 ## Execution environments
 Python3 virtual environment
