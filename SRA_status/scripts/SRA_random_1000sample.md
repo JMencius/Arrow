@@ -1,4 +1,6 @@
-## Random sample 1000 SRA run
+# Random selection of 1000 SRA run
+
+## Prepare data
 First we collect all the sra run while excluding COVID, due to its large proportion.
 The search command in `SRA advanced serach` is
 ```
