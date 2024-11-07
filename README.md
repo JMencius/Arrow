@@ -13,7 +13,7 @@ The contents are organized into seven main folders. Please feel free to click on
     - [Random selection of SRA run](./SRA_status/scripts/SRA_random_1000sample.md)
 
 
-2. ONTsoftware_misuse_configs
+2. [ONTsoftware_misuse_configs](./ONTsoftware_misuse_configs/README.md)
 
     Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
     - [Clair3](./ONTsoftware_misuse_configs/clair3/scripts/README.md)
