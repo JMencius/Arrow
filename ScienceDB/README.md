@@ -1,11 +1,11 @@
 # How to download data from ScienceDB
 ## Introduction
-Our basecalled data is shared via [ScienceDB](https://www.scidb.cn/en), an open, trusted global database for data publishing. We selected ScienceDB over popular options like FigShare or Zenodo due to the large size of our data.
+Our basecalled data is shared via [ScienceDB](https://www.scidb.cn/en), an open, trusted global database for data publishing. We selected ScienceDB over popular options like Figshare or Zenodo due to the large size of our data.
 
 ## Ways to download
 1. Web browser
 
-    This method allows for `anonymous` downloading. Simply open the shared link in a web browser and click on the download button (<span style="color:blue">blue square</span> in the following figure) to access the data.
+    This method allows for `anonymous` downloading, but requires a graphical user interface. Simply open the shared link in a web browser and click on the download button (blue square in the following figure) to access the data.
     ![fig1](./sciencedb_fig1.png)
 
 
@@ -32,14 +32,14 @@ We also provide the `.md5` file for all the data we uploaded. To verify the file
 md5sum -c COLO829_R10D0FAST_all.fastq.gz.md5;
 ```
     
-If md5sum pass you will receive:
+If the MD5 check passes, you will receive:
 `COLO829_R10D0FAST_all.fastq.gz: OK`
 
 
 ## Possible problem
 1. lftp
    
-   If your operating system do not include `lftp`, try to install `lftp` through conda <https://anaconda.org/conda-forge/lftp> or `apt` on Ubuntu
+   If your operating system does not include `lftp`, try to install `lftp` through conda <https://anaconda.org/conda-forge/lftp> or install `apt` on Ubuntu
    ```
    # install through conda
    conda env create -n lftp;
