@@ -5,11 +5,11 @@ This directory contains 4 independent pipelines for
 
 1. Raw nanopore data(FAST5/POD5) availability in SRA database
 
-    Please refer to `raw_ONTdata_search.md`
+    Please refer to [raw_ONTdata_search.md](./raw_ONTdata_search.md)
 
 2. BAM availability in SRA database
 
-    Please refer to `sra_bam_availability.md`
+    Please refer to [sra_bam_availability.md](./sra_bam_availability.md)
 
 
 3. Basecaller version and flowcell version mentioned in SRA database metadata
@@ -24,7 +24,7 @@ This directory contains 4 independent pipelines for
 
 4. Random downsampling SRA run
 
-    Please refer to `SRA_random_100sample.md`
+    Please refer to [SRA_random_100sample.md](./SRA_random_100sample.md)
 
 ## Execution environments
 Python3 virtual environment
