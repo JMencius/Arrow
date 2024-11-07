@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Pipeline
+# 1. Build the directory structure
+mkdir -p ../results;
+
 # 1. We randomly downsampled it to 1,000,000 reads, 100,000 reads, 10,000 reads, 1,000 reads, 100 reads, and 10 reads respectively by using seqtk
 bash downsample.sh;
 
