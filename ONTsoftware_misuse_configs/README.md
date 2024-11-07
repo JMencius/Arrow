@@ -42,6 +42,6 @@ The exact version of the tested software is listed below.
 
 | Software | Version | Application | Detail documentation |
 |:---:|:---:|:---:|:---:|
-| Clair3 | 1.0.4 | variant calling | [Clair3](./clair3.md) |
-| Shasta | 0.11.1 | genome assembly | [Shasta](./shasta.md) |
-| Medaka | 1.11.3 | genome polishing | [Medaka](./medaka.md) |
+| Clair3 | 1.0.4 | variant calling | [Clair3](./clair3/scripts/README.md) |
+| Shasta | 0.11.1 | genome assembly | [Shasta](./shasta/scripts/README.md) |
+| Medaka | 1.11.3 | genome polishing | [Medaka](./medaka/scripts/README.md) |
