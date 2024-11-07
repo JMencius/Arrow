@@ -23,7 +23,9 @@ You can follow the instruction in [here](../../../ScienceDB/README.md) to downlo
 ```bash
 mkdir -p ../data;
 cd ../data;
-## Download the FASTQ file through FTP link in the ScienceDB
+
+## Download the FASTQ file through ScienceDB
+
 ## decompression
 tar -zxvf HG002_R9_guppy_similarity.tar.gz;
 ```
