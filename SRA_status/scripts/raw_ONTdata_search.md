@@ -12,7 +12,7 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 ```
 (("oxford nanopore"[Platform]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date]) 
 ```
-    The proportion of Raw nanopore data(FAST5/POD5) availability in SRA database is calculated by **N<sub>raw</sub>/N<sub>total</sub>**
+The proportion of Raw nanopore data(FAST5/POD5) availability in SRA database is calculated by **N<sub>raw</sub>/N<sub>total</sub>**
 
 
 ## Pipeline
@@ -22,4 +22,4 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 
 
 ## Note
-<mark> Note: one may get different exact number of **N<sub>raw</sub>** or **N<sub>total</sub>**, due to different search date, some accession of the SRA will be deleted or added, causing slight changes in total counts, but the proportion will remain comparable. </mark>
+<mark> Note: one may get different exact number of **N<sub>raw</sub>** or **N<sub>total</sub>**, due to different search date. Some accession of the SRA will be deleted or added, causing slight changes in total counts, but the proportion will remain comparable. </mark>
