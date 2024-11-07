@@ -33,9 +33,7 @@ Our basecalled data is shared via [ScienceDB](https://www.scidb.cn/en), an open,
     ```
     
     If md5sum pass you will receive:
-    ```
-    COLO829_R10D0FAST_all.fastq.gz: OK
-    ```
+    `COLO829_R10D0FAST_all.fastq.gz: OK`
 
 ## Possible problem
 1. lftp
