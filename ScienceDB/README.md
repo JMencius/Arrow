@@ -28,9 +28,10 @@ Our basecalled data is shared via [ScienceDB](https://www.scidb.cn/en), an open,
 
 ## Verify the downloaded data
     We also provide the `.md5` file for all the data we uploaded. To verify the file, such as `COLO829_R10D0FAST_all.fastq.gz` run the following command:
-    ```bash
+    ```
     md5sum =c COLO829_R10D0FAST_all.fastq.gz.md5;
     ```
+    
     If md5sum pass you will receive:
     ```
     COLO829_R10D0FAST_all.fastq.gz: OK
