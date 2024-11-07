@@ -39,7 +39,7 @@ If the MD5 check passes, you will receive:
 ## Possible problem
 1. lftp
    
-   If your operating system does not include `lftp`, try to install `lftp` through conda <https://anaconda.org/conda-forge/lftp> or install `apt` on Ubuntu
+   If your operating system does not include `lftp`, try to install `lftp` through conda <https://anaconda.org/conda-forge/lftp> or install `apt` on Ubuntu.
    ```
    # install through conda
    conda env create -n lftp;
