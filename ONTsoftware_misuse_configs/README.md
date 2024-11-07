@@ -15,7 +15,7 @@ Numerous state-of-the-art algorithms for ONT data analysis such as sequence alig
 | [Dysgu](https://github.com/kcleal/dysgu?tab=readme-ov-file#calling-svs) | Variant calling | :white_check_mark: | | | | |
 | [nanomonsv](https://github.com/friend1ws/nanomonsv#get) | Variant calling | :white_check_mark: | :white_check_mark: | :white_check_mark:  | unspecified |  |
 | [Medaka](https://github.com/nanoporetech/medaka#models) | Variant calling | :white_check_mark: | :white_check_mark: | :white_check_mark: | FAST, HAC, SUP | |
-| [WhatsHap](https://github.com/whatshap/whatshap) | Haplotype phasing | | | :white_check_mark: |
+| [WhatsHap](https://github.com/whatshap/whatshap) | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
 | [Margin](https://github.com/UCSC-nanopore-cgl/margin#parameter-files) | Haplotype phasing | :white_check_mark: | :white_check_mark: | :white_check_mark:  | unspecified |  |
 | [HapCut2](https://github.com/vibansal/HapCUT2) | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
 | [LongPhase](https://github.com/twolinin/longphase) | Haplotype phasing | | | | | :white_check_mark: <sup>[2]</sup> |
