@@ -39,3 +39,9 @@ bash HG002_R9_QV_sim.sh > ../results/HG002_R9_qv_sim.txt
 ```
 
 
+# Repeat our results
+To repeat our results, please install the aforementioned conda environment first and run
+```
+bash ./run_all.sh;
+```
+
