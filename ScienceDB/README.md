@@ -12,7 +12,7 @@ Our basecalled data is shared via [ScienceDB](https://www.scidb.cn/en), an open,
    
 2. FTP server
 
-   This method first requires login to `ScienceDB`. Then click the `FTP` ((red square in the following figure)) to retrieve FTP access info.
+   This method first requires login to `ScienceDB`. Then click the `FTP` (red square in the following figure) to retrieve FTP access info.
    ![fig2](./sciencedb_fig2.png)
 
    Once you get the FTP access info, you can use following command to download the data we shared.
@@ -26,11 +26,26 @@ Our basecalled data is shared via [ScienceDB](https://www.scidb.cn/en), an open,
    lftp -u ${USERNAME},${PASSWORD} -e "get COLO829_R10D0FAST_all.fastq.gz; bye" ftp://ftp-upload.scidb.cn:2121;
    ```
 
+## Verify the downloaded data
+    We also provide the `.md5` file for all the data we uploaded. To verify the file, such as `COLO829_R10D0FAST_all.fastq.gz` run the following command:
+    ```bash
+    md5sum =c COLO829_R10D0FAST_all.fastq.gz.md5;
+    ```
+    If md5sum pass you will receive:
+    ```
+    COLO829_R10D0FAST_all.fastq.gz: OK
+    ```
+
 ## Possible problem
 1. lftp
-   If your operating system do not include `lftp`, try to install it through conda <https://anaconda.org/conda-forge/lftp>:
+   
+   If your operating system do not include `lftp`, try to install `lftp` through conda <https://anaconda.org/conda-forge/lftp> or `apt` on Ubuntu
    ```
+   # install through conda
    conda env create -n lftp;
    conda activate lftp;
    conda install conda-forge::lftp;
+
+   # install through apt
+   sudo apt install lftp;
    ```
