@@ -26,7 +26,9 @@ You can follow the instruction in [here](../../../ScienceDB/README.md) to downlo
 ```bash
 mkdir -p ../data;
 cd ../data
-## Download the FASTQ file through FTP link in the ScienceDB
+
+## Download the FASTQ file through ScienceDB
+
 # Decompress the FASTQ file
 gzip -d COLO829_R10D0FAST_all.fastq.gz;
 gzip -d COLO829_R10G6FAST_all.fastq.gz
