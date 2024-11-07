@@ -1,5 +1,5 @@
 # Shasta
-## Descriptions 
+## Description
 This directory archives the pipeline which we benchmark shasta *de novo* assembly with different config.
 
 
