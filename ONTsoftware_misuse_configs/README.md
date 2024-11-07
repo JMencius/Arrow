@@ -3,14 +3,14 @@
 ## ONT softwares which requires flowcell or basecaller info to set the correct config
 Numerous state-of-the-art algorithms for ONT data analysis such as sequence alignment, variant calling, haplotype phasing, genome assembly and genome polishing have a direct or indirect reliance on the specific flowcell type and basecaller configuration.
 
-**The proof of the needed information is given in the hyperlink attached to each software name.**
+**The evidence of the needed information is given in the hyperlink attached to each software name.**
 
 | Software | Application | Flowcell type | Basecaller type | Basecaller version | Basecalling mode | Indirect dependence |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [Minimap2](https://github.com/lh3/minimap2/releases/tag/v2.27) | Sequence alignment | :white_check_mark: |  |  |  |  |
 | [HERRO](https://github.com/lbcb-sci/herro) | Error correction | :white_check_mark: |  |  |  |  |
 | [Clair3](https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#pre-trained-models) | Variant calling | :white_check_mark:  | :white_check_mark:  | :white_check_mark: | HAC/SUP <sup>[1]</sup> |  |
-| [DeepVaraint](https://github.com/google/deepvariant) | Variant calling | :white_check_mark:  |  |  |  |  |
+| [DeepVariant](https://github.com/google/deepvariant) | Variant calling | :white_check_mark:  |  |  |  |  |
 | [PEPPER](https://github.com/kishwarshafin/pepper) | Variant calling | :white_check_mark:  | :white_check_mark:  | :white_check_mark: | SUP |  |
 | [Dysgu](https://github.com/kcleal/dysgu?tab=readme-ov-file#calling-svs) | Variant calling | :white_check_mark: | | | | |
 | [nanomonsv](https://github.com/friend1ws/nanomonsv#get) | Variant calling | :white_check_mark: | :white_check_mark: | :white_check_mark:  | unspecified |  |
@@ -36,7 +36,7 @@ Numerous state-of-the-art algorithms for ONT data analysis such as sequence alig
 
 <a id="ont-software"></a>
 ## ONT software performances using the correct and wrong config
-We tested three popular ONT data analysis software which required flowcell type or basecaller to select the best model or choose the specific parameter using the popular [HG002](https://github.com/human-pangenomics/HG002_Data_Freeze_v1.0) data. 
+We tested three popular ONT data analysis software which required flowcell type or basecaller to select the best model or choose the specific parameter using the widely used `HG002` data. 
 
 The exact version of the tested software is listed below.
 
