@@ -15,7 +15,7 @@ The contents are organized into seven main folders. Please feel free to click on
 
 2. [ONTsoftware_misuse_configs](./ONTsoftware_misuse_configs/README.md)
 
-    Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs
+    Benchmark of `Clair3`, `Shasta`, `Medaka` with correct or wrong configs/models
     - [Clair3](./ONTsoftware_misuse_configs/clair3/scripts/README.md)
     - [Shasta](./ONTsoftware_misuse_configs/shasta/scripts/README.md)
     - [Medaka](./ONTsoftware_misuse_configs/medaka/scripts/README.md)
