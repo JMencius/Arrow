@@ -2,7 +2,7 @@
 This repository archives the pipelines and source codes used in the LongBow manuscript.
 
 # Contents
-The contents are organized into seven main folders. Please feel free to click on any title to view the detailed `README.md`.
+The contents are organized into six main folders. Please feel free to click on any title to view the detailed `README.md`.
 
 1. [SRA_status](./SRA_status/scripts/README.md)
 
@@ -31,17 +31,13 @@ The contents are organized into seven main folders. Please feel free to click on
     Testing LongBow on 66 groups of ONT data and human ONT SRA data.
 
 
-5. [LongBowDB](./longbowDB/LongBowDB-website/index.html)
 
-    Source code for the graphical user interface LongBowDB
-
-
-6. [COGUK](./COGUK/scripts/README.md)
+5. [COGUK](./COGUK/scripts/README.md)
 
     Reanalysis of COGUK SARS-CoV-2 data
 
 
-7. Others
+6. Others
 
     Other pipelines in the manuscript
     - [Downsampling evaluation](./Others/downsampling_test/scripts/README.md)
