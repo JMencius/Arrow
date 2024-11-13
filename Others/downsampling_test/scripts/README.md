@@ -17,14 +17,16 @@ conda env create -f ont-longbow.yaml;
 ```
 
 # Data
-We selected a high-coverage ONT sequencing dataset of human melanoma fibroblasts (COLO829) from the ONT Open Data project (s3://ont-open-data/colo829_2023.04/) to evaluate the efficacy of downsampling. This dataset contains 13,760,388 reads from its original POD5 files. The whole dataset is basecalled with `Guppy 6.4.6 FAST` and `Dorado 0.4.1 FAST` to generate the whole data.
+We selected a high-coverage ONT sequencing dataset of human melanoma fibroblasts (COLO829) from the ONT Open Data project (s3://ont-open-data/colo829_2023.04/) to evaluate the efficacy of downsampling. This dataset contains 13,760,388 reads from its original POD5 files. The whole dataset is basecalled with `Guppy 6.4.6 FAST` and `Dorado 0.4.1 FAST` to generate the whole data. 
+
+<mark>The data is shared through <https://www.scidb.cn/en/detail?dataSetId=98f2336a534b40a3857faadadd01692d>. </mark>
 
 
 Please download the two whole basecalled FASTQ file we shared through ScienceDB link to the ../data directory and decompress it before running the following pipeline.
 
 You can follow the instruction in [here](../../../ScienceDB/README.md) to download the data we shared. 
 
-The data is in <https://www.scidb.cn/en/detail?dataSetId=b9eca82475a64772a67ec9b7dac2beb3>, please download the `HG002_R9_guppy_similarity.tar.gz` file.
+
 ```bash
 mkdir -p ../data;
 cd ../data
