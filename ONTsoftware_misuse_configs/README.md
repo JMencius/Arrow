@@ -1,9 +1,9 @@
 # ONT software misuse config or model
 
 ## ONT softwares which requires flowcell or basecaller information
-Numerous state-of-the-art algorithms for ONT data analysis such as sequence alignment, variant calling, haplotype phasing, genome assembly and genome polishing have a direct or indirect reliance on the specific flowcell type and basecaller configuration.
+Numerous state-of-the-art algorithms for ONT data analysis such as sequence alignment, error correction, variant calling, haplotype phasing, genome assembly and genome polishing have a direct or indirect reliance on the specific flowcell type and basecaller configuration.
 
-**The evidence of the needed information is given in the hyperlink attached to each software name.**
+**Evidence of the required information is provided via hyperlinks attached to each software name.**
 
 | Software | Application | Flowcell type | Basecaller type | Basecaller version | Basecalling mode | Indirect dependence |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -51,4 +51,4 @@ Please download the shared `HG002` FASTQ through ScienceDB and decompressed the 
 
 <mark> The data is shared through <https://www.scidb.cn/en/detail?dataSetId=b9eca82475a64772a67ec9b7dac2beb3> </mark>
 
-You can follow the instruction in [here](../../ScienceDB/README.md) to download the data we shared.
+You can follow the instruction [here](../../ScienceDB/README.md) to download the shared data.
