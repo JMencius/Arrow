@@ -3,27 +3,30 @@ We use the [SRA Advanced Search Builder](https://www.ncbi.nlm.nih.gov/sra/advanc
 
 ## Search command
 ### BAM availability in all species
-1. Search command to obtain the total number of ONT data in all species
+1. Search command to obtain the total number of ONT data in all species (**N<sub>total</sub>**)
 ```
 (("oxford nanopore"[Platform]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date]) 
 ```
 
-2. Search command to obtain the number of BAM file availability in all species
+2. Search command to obtain the number of BAM file availability in all species (**N<sub>bam</sub>**)
 ```
 (("oxford nanopore"[Platform]) AND "filetype bam"[Properties]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date])
 ```
 
+The proportion of BAM availability in all species in SRA database is calculated as **N<sub>bam</sub>/N<sub>total</sub>**
+
 ### BAM availability in species excluding severe acute respiratory syndrome-related coronavirus
 Severe acute respiratory syndrome-related coronavirus(HCoV-SARS) NCBI Taxonomy ID is [694009](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=694009). 
-1. Search command to obtain the total number of ONT data in species excluding HCoV-SARS
+1. Search command to obtain the total number of ONT data in species excluding HCoV-SARS (**E<sub>total</sub>**)
 ```
 (("oxford nanopore"[Platform]) NOT Severe acute respiratory syndrome coronavirus 2[Organism]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date]) 
 ```
 
-2. Search command to obtain the number of BAM available in species excluding HCoV-SARS
+2. Search command to obtain the number of BAM available in species excluding HCoV-SARS (**E<sub>bam</sub>**)
 ```
 (("oxford nanopore"[Platform]) AND "filetype bam"[Properties]) NOT Severe acute respiratory syndrome coronavirus 2[Organism]) AND ("2010/01/01"[Publication Date] : "2024/01/09"[Publication Date])
 ```
+The proportion of BAM availability in species excluding HCoV-SARS in SRA database is calculated as **E<sub>bam</sub>/E<sub>total</sub>**
 
 ## Pipeline
 1. Conduct each search command.
