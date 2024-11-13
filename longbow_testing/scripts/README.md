@@ -15,6 +15,8 @@ conda env create -f longbow.yaml;
 # Data
 Please download the 66 groups of test data we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipeline.
 
+<mark> The data is shared through <https://www.scidb.cn/en/detail?dataSetId=47fc05aee6be46719aeb7cf03cfc70bf> </mark>
+
 You can follow the instruction in [here](../../ScienceDB/README.md) to download the data we shared.
 ```bash
 mkdir -p ../data;
@@ -67,7 +69,7 @@ bash analysis_sra_ont.sh;
 
 
 # Repeat our results
-To repeat our results, please install the forementioned conda environment and download the data we share, then run
+To repeat our results, please install the aforementioned conda environment and download the data we share, then run
 ```bash
 bash ./run_all.sh;
 ```
