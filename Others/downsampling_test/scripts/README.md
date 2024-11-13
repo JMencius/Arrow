@@ -22,9 +22,7 @@ We selected a high-coverage ONT sequencing dataset of human melanoma fibroblasts
 <mark>The data is shared through <https://www.scidb.cn/en/detail?dataSetId=98f2336a534b40a3857faadadd01692d>. </mark>
 
 
-Please download the two whole basecalled FASTQ file we shared through ScienceDB link to the ../data directory and decompress it before running the following pipeline.
-
-You can follow the instruction in [here](../../../ScienceDB/README.md) to download the data we shared. 
+Please download the two whole basecalled FASTQ file we shared through ScienceDB link to the `../data` directory and decompress it before running the following pipeline. You can follow the instruction in [here](../../../ScienceDB/README.md) to download the data we shared. 
 
 
 ```bash
