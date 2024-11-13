@@ -23,12 +23,12 @@ The contents are organized into six main folders. Please feel free to click on a
   
 3. [LongBow_training](./longbow_training/scripts/README.md)
 
-    Training code of LongBow
+    Instructions for training the LongBow model using Nanopore raw data from various model organisms. Details on the training data and how to perform a leave-one-out test to determine the best lag for autocorrelation analysis.
 
 
 4. [LongBow_testing](./longbow_testing/scripts/README.md)
 
-    Testing LongBow on 66 groups of ONT data and human ONT SRA data.
+    Instruction for testing LongBow on 66 independent groups of ONT data and human ONT SRA data.
 
 
 
