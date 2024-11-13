@@ -22,7 +22,7 @@ We selected a high-coverage ONT sequencing dataset of human melanoma fibroblasts
 
 Please download the two whole basecalled FASTQ file we shared through ScienceDB link to the ../data directory and decompress it before running the following pipeline.
 
-You can follow the instruction in [here](../../../ScienceDB/README.md) to download the data we shared.
+You can follow the instruction in [here](../../../ScienceDB/README.md) to download the data we shared. The data is in <https://www.scidb.cn/en/detail?dataSetId=b9eca82475a64772a67ec9b7dac2beb3>, please download the `HG002_R9_guppy_similarity.tar.gz` file.
 ```bash
 mkdir -p ../data;
 cd ../data
