@@ -1,6 +1,6 @@
 # ONT software misuse config or model
 
-## ONT softwares which requires flowcell or basecaller information
+## List of ONT data analysis software with reliance on flowcell types or basecaller configurations
 Numerous state-of-the-art algorithms for ONT data analysis such as sequence alignment, error correction, variant calling, haplotype phasing, genome assembly and genome polishing have a direct or indirect reliance on the specific flowcell type and basecaller configuration.
 
 **Evidence of the required information is provided via hyperlinks attached to each software name.**
@@ -33,7 +33,7 @@ Numerous state-of-the-art algorithms for ONT data analysis such as sequence alig
 
 <sup>[3]</sup> These algorithms depend on the outputs of variant callers, which may be influenced by flowcell type or basecaller configuration.
 
-<sup>[4]</sup> wtdbg2 depends on sequencing error rate, which is influenced by flowcell type and basecaller configuration.
+<sup>[4]</sup> Wtdbg2 depends on sequencing error rate, which is influenced by flowcell type and basecaller configuration.
 
 
 ## ONT software performances using the correct and wrong config
