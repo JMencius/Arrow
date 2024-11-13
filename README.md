@@ -34,7 +34,7 @@ The contents are organized into six main folders. Please feel free to click on a
 
 5. [COGUK](./COGUK/scripts/README.md)
 
-    Reanalysis of COGUK SARS-CoV-2 data
+    Repart and reanalysis of COGUK SARS-CoV-2 data
 
 
 6. Others
