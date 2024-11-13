@@ -44,3 +44,11 @@ The exact version of the tested software is listed below.
 | Clair3 | 1.0.4 | variant calling | [Clair3](./clair3/scripts/README.md) |
 | Shasta | 0.11.1 | genome assembly | [Shasta](./shasta/scripts/README.md) |
 | Medaka | 1.11.3 | genome polishing | [Medaka](./medaka/scripts/README.md) |
+
+## Data
+### HG002 basecalled data
+Please download the shared `HG002` FASTQ through ScienceDB and decompressed the FASTQ files to the folder `basecalled_data` before conducting ONT software performances evaluation.
+
+<mark> The data is shared through <https://www.scidb.cn/en/detail?dataSetId=b9eca82475a64772a67ec9b7dac2beb3> </mark>
+
+You can follow the instruction in [here](../../ScienceDB/README.md) to download the data we shared.
