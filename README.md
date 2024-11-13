@@ -1,7 +1,7 @@
 # Arrow
 This repository archives the pipelines and source codes used in the LongBow manuscript.
 
-# Contents
+## Contents
 The contents are organized into six main folders. Please feel free to click on any title to view the detailed `README.md`.
 
 1. [SRA_status](./SRA_status/scripts/README.md)
@@ -46,22 +46,22 @@ The contents are organized into six main folders. Please feel free to click on a
 
 
 
-# Requirement
-## OS requirement
+## Requirement
+### OS requirement
 Codes were tested on _Linux_ operating systems. The following release is tested.
 Linux: Redhat Enterprise Linux 8
 Linux: Ubuntu 22.04.1
 
 
-## Software requirement
-### Conda version
+### Software requirement
+#### Conda version
 Most of the following softwares are installed through `Conda` environment. We have run test on Conda version `24.1.2` and version `24.4.0`.
 <mark>We strongly recommend installing Conda version >= `24.1.x`.</mark>
 
-### Programming language
+#### Programming language
 To run the Python scripts we provided, Python 3.7 or a higher version is required. 
 
-### Software version list
+#### Software version list
 | Software | Version |
 |:---:|:---:|
 | Artic | 1.2.4 |
