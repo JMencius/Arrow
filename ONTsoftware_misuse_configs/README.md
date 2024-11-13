@@ -27,11 +27,11 @@ Numerous state-of-the-art algorithms for ONT data analysis such as sequence alig
 | [HomoPolish](https://github.com/ythuang0522/homopolish#introduction) | Genome polishing | :white_check_mark: | | | | |
 | [Medaka](https://github.com/nanoporetech/medaka#models) | Genome polishing | :white_check_mark: | :white_check_mark: | :white_check_mark: | FAST, HAC, SUP | |
 
-[1] Clair3 uses the same model for the HAC and SUP modes of R9 Guppy 6 data, but uses different models for the HAC and SUP modes of R10 data.
+<sup>[1]</sup> Clair3 uses the same model for the HAC and SUP modes of R9 Guppy 6 data, but uses different models for the HAC and SUP modes of R10 data.
 
-[2] These algorithms depend on the outputs of variant callers, which may be influenced by flowcell type or basecaller configuration.
+<sup>[2]</sup> These algorithms depend on the outputs of variant callers, which may be influenced by flowcell type or basecaller configuration.
 
-[3] Wtdbg2 depends on sequencing error rate, which is influenced by flowcell type and basecaller configuration.
+<sup>[3]</sup> wtdbg2 depends on sequencing error rate, which is influenced by flowcell type and basecaller configuration.
 
 
 ## ONT software performances using the correct and wrong config
