@@ -51,8 +51,8 @@ The correct Medaka models for different flowcell and basecaller versions of HG00
 |:---:|:---:|:---:|
 | 1 | basecalled | The basecalling configuration for the input FASTQ | 
 | 2 | polished contig | Medaka model used for genome polishing |
-| 3 | draft QV | Yak QV score of the flye-assembled draft |
-| 4 | polished QV | Yak QV score of the polished contig |
+| 3 | draft QV | Yak QV score of the flye-assembled draft ($\text{Draft QV}$) |
+| 4 | polished QV | Yak QV score of the polished contig ($\text{Polished QV}$) |
 | 5 | QV shift | $\text{QV shift} = \text{Polished QV} - \text{Draft QV}$ |
 
 
