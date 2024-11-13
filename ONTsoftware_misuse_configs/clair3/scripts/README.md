@@ -1,6 +1,6 @@
 # Clair3
 ## Description
-This directory archives the pipelines we used to run `Clair`3 and benchmark the results to the gold standard truth.
+This directory archives the pipelines we used to run `Clair3` and benchmark the results to the gold standard truth.
 
 
 ## Execution environments
@@ -20,14 +20,14 @@ conda activate singularity-env;
 singularity pull docker://hkubal/clair3:v1.0.4;
 
 ```
-You also need to download several models manually because not all models were contained in the latest package(see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared at `../image/clair3.sif` .
+You also need to download several models manually because not all models may not contained in the `Clair3` package (see https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#ont-provided-models) or you can use the image we prepared at `../image/clair3.sif` .
 
 3. hap.py
 ```bash
 conda env create -f ./envs/hap.yaml;
 ```
 ## Clair3 models
-According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the correct Clair3 models for different flowcell and basecaller versions of HG002 data is listed below, the download link is also provided.
+According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the correct Clair3 models for different flowcell and basecaller versions of HG002 data are listed below, the download link is also provided.
 
 | Flowcell type | Basecaller | Basecalling mode | Correct Clair3 model |
 |:---:|:---:|:---:|:-----:|
@@ -49,7 +49,7 @@ According to the (Clair3 documentation)[https://github.com/HKU-BAL/Clair3], the 
 bash ./prepare/prepare.sh;
 ```
 
-2. Run `Minimap2` alignmen
+2. Run `Minimap2` alignment
 ```bash
 bash ./alignment/alignment.sh;
 ```
