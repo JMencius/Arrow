@@ -16,7 +16,7 @@ This directory contains 4 independent pipelines for
 
     We use a multi-thread Python script to analyze the entire metadata set of SRA. 
 
-    Specifically, this script first filtered the total SRA Runs based on two conditions: 
+    Specifically, this script first filters the total SRA Runs based on two conditions: 
 
     - the publication date of the SRA Run falls within the range of “2010/01/01” to “2024/01/09”,
     - the sequencing platform is Oxford Nanopore. Multiple regular expressions were then employed to identify keywords related to flowcell or basecaller configuration information within the XML files of the filtered SRA Runs. 
@@ -28,6 +28,7 @@ This directory contains 4 independent pipelines for
 
 ## Execution environments
 Python3 virtual environment
+
 The Python scripts require Python 3.7 or higher. To recreate the same Python running environment use
 ```bash
 conda env create -f python3-env.yaml;
@@ -35,7 +36,7 @@ conda env create -f python3-env.yaml;
 
 
 ## Reproduce results
-1. To reproduce our results for `pipeline 1` and `pipeline 2`, please navigate to `SRA advance search` in
+1. To reproduce our results for `pipeline 1` and `pipeline 2`, please navigate to `SRA advanced search` in
 ```
 https://www.ncbi.nlm.nih.gov/sra/advanced
 ```
