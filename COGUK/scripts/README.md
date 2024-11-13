@@ -1,7 +1,8 @@
-# Description
+# Repeat and reanalysis COGUK data
+## Description
 This folder archives the scripts for EBI data download, random selection of artic model, artic and artex running, and post analysis.
 
-# Execution environments
+## Execution environments
 The conda environment used is listed in `./envs`. Use `conda env create` to recreate each environment, 
 1. Minimap2
 ```bash
@@ -29,7 +30,7 @@ conda env create -f ./envs/hap.yaml;
 conda env create -f ./envs/bioawk.yaml;
 ```
 
-# Pipelines
+## Pipelines
 1. Preprocess of COG-UK EBI metadata
 Purpose: COG-UK sample id with both NGS and ONT sequencing, and retrieve the download links for raw ONT sequence and analysis files (NGS-assembled consensus sequence, ONT-assembled consensus sequence)
 ```bash
@@ -66,7 +67,7 @@ Evaluate F1-score for each scheme variant calling, find extra variant for Artex 
 bash ./post_analysis/post_analysis.sh;
 ```
 
-# Results description
+## Results description
 1. `./download_list.txt`
 
 | column | Content |
@@ -91,13 +92,13 @@ In each `ERR*` files contains 4 subdirectory: longbow: LongBow predicted Medaka 
 Include the F1 score details of each separate mode of SNP and INDEL.
 
 
-# Repeat our results
+## Repeat our results
 To repeat our results, please install the previously mentioned conda environment and run
 ```
 bash ./run_all.sh;
 ```
 
-# Possible error
+## Possible error
 1. Artic pipeline
 If you encounter `medaka: error: argument command: invalid choice: 'consensus'`, because your conda install newer `medaka` version but not the compatabile one, try running the following command:
 ```bash
