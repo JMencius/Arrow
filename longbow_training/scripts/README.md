@@ -1,15 +1,16 @@
-# Description
+# LongBow training
+## Description
 This directory archives the pipelines for LongBow model training. Each model includes QV distribution and autocorrelation in `.csv` file. 
 For autocorrelation, a leave-one-out test is also included to get the best lag.
 
 
-# Execution environment
+## Execution environment
 Use the LongBow environment for the following two pipelines
 ```bash
 conda env create -f longbow.yaml;
 ```
 
-# Training data
+## Training data
 Nanopore raw data of 7 model organism, namely _Homo sapiens_, _Mus musculus_, _Danio rerio_, _Drosophila melanogaster_, _Arabidopsis thaliana_, _Saccharomyces cerevisiae_, and _Escherichia coli_ were used for LongBow training.
 | index |Species name | Flowcell type | Flowcell type (FLO-) | Sequencing kit (SQK-) | Source |
 |:--:|:-------:|:---:|:---:|:---:|:---:|
@@ -37,8 +38,7 @@ For the basecalling of the training data we use the following combination. Pytho
 | R10 | Dorado0.4.1 | FAST, HAC, SUP |
 
 
-
-# Pipelines
+## Pipelines
 1. Build directory structure
 ```bash
 mkdir -p ../results;
@@ -54,7 +54,7 @@ python autocorrelation_LOO_lag.py -i ../data/model -o ../results/R10D0_autocorre
 
 ```
 
-# Result description
+## Result description
 1. The result of the LOO test is located in `../results`, 5 txt files record the accuracy verus different lags in different basecalling configurations.
 
 ## Repeat our results
