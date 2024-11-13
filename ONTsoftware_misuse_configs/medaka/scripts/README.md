@@ -18,16 +18,16 @@ conda env create -f yak.yaml;
 ## Pipeline
 1. Make sure you have run the pipeline in `../../flye/scripts/README.md` and `../../yak/scripts/README.md`.
 
-To run Flye assembly follow the instruction in [here](../../flye/scripts/README.md).
+To run Flye genome assembly please follow the instruction in [here](../../flye/scripts/README.md).
 
 The genome draft used for `Medaka` polishing is based on `Flye` assembled contigs.. The evaluation is performed using yak with short-read NGS data.
 
 
-3. Run `Medaka` polishing for R9G4FAST, R9G4HAC, R9G6FAST, R9G6HAC, R9G6SUP, R10D0HAC, and R10D0SUP data
+2. Run `Medaka` polishing for R9G4FAST, R9G4HAC, R9G6FAST, R9G6HAC, R9G6SUP, R10D0HAC, and R10D0SUP data
 `bash run_medaka_polishing.sh;`
 
 
-4. Run `yak` evaluation for polished data
+3. Run `yak` evaluation for polished data
 `bash cal_polished_yakQV.sh;`
 
 ## Medaka models
@@ -45,13 +45,15 @@ The correct Medaka models for different flowcell and basecaller versions of HG00
 ## Result descriptions
 1. Naming pattern
    For example, `R9G4FAST_R9G4HAC` means R9G4FAST basecalled FASTQ data using Medaka model for R9G4HAC.
-3. Polished QV shift will be in `./QVshift.csv`, the description of each column is as follow:
+
+   
+2. Polished QV shift will be in `./QVshift.csv`, the description of each column is as follow:
 
 | Column index | Column name | Column description |
 |:---:|:---:|:---:|
 | 1 | basecalled | The basecalling configuration for the input FASTQ | 
 | 2 | polished contig | Medaka model used for genome polishing |
-| 3 | draft QV | Yak QV score of the flye-assembled draft ($\text{Draft QV}$) |
+| 3 | draft QV | Yak QV score of the Flye-assembled draft ($\text{Draft QV}$) |
 | 4 | polished QV | Yak QV score of the polished contig ($\text{Polished QV}$) |
 | 5 | QV shift | $\text{QV shift} = \text{Polished QV} - \text{Draft QV}$ |
 
