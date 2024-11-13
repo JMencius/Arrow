@@ -64,14 +64,12 @@ The correct Shasta parameters for different flowcell and basecaller versions of 
 For example: `R10D0FAST_R9G4` means `R10D0FAST` basecalled FASTQ data using `shasta` config for `R9G4` data.
 
 2. NG50
-`calN50_result.txt` holds the `NG50` result in line start with
- ```
-NL      50
-```
+`calN50_result.txt` holds the `NG50` result in line start with `NL      50`
 For example:
 ```
 NL      50      12529106        66
 ```
+The NG50 is 12,529,106 bp.
 
 4. Yak QV score
 `yak.txt` holds the `Yak QV score` result in the last line of the file
