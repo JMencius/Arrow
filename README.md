@@ -58,6 +58,8 @@ Linux: Ubuntu 22.04.1
 Most of the following softwares are installed through `Conda` environment. We have run test on Conda version `24.1.2` and version `24.4.0`.
 <mark>We strongly recommend installing Conda version >= `24.1.x`.</mark>
 
+You can follow the Conda manual in [here](https://docs.anaconda.com/miniconda/) to install `Conda`.
+
 #### Programming language
 To run the Python scripts we provided, Python 3.7 or a higher version is required. 
 
