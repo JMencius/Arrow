@@ -40,7 +40,7 @@ If the MD5 check passes, you will receive:
 1. lftp
    
    If your operating system does not include `lftp`, try to install `lftp` through conda <https://anaconda.org/conda-forge/lftp> or install `apt` on Ubuntu.
-   ```
+   ```bash
    # install through conda
    conda env create -n lftp;
    conda activate lftp;
@@ -48,4 +48,13 @@ If the MD5 check passes, you will receive:
 
    # install through apt
    sudo apt install lftp;
+   ```
+
+2. md5sum
+   If your operating system does not include `md5sum`, try to install `md5sum` through conda
+   ```bash
+   # install md5sum through conda
+   conda env create -n md5sum;
+   conda actvate md5sum;
+   conda install -c conda-forge coreutils;
    ```
