@@ -1,12 +1,12 @@
 # Shasta
 ## Description
-This directory archives the pipeline which we benchmark shasta *de novo* assembly with different config.
+This directory archives the pipeline which we benchmark shasta *de novo* assembly with different configurations.
 
 
 ## Execution environments
-1. For `Shasta`, we download the `Shasta` binary executable from GitHub <https://github.com/paoloshasta/shasta/releases> version 0.11.0
+1. For `Shasta`, we download the `Shasta` binary executable from GitHub <https://github.com/paoloshasta/shasta/releases> version 0.11.1
 ```bash
-wget https://github.com/paoloshasta/shasta/releases/download/0.11.0/shasta-Linux-0.11.0;
+wget https://github.com/paoloshasta/shasta/releases/download/0.11.1/shasta-Linux-0.11.1;
 ```
 
 2. For `yak`, we set up the `conda` environment as follow:
@@ -33,7 +33,7 @@ chmod +x ./shasta-Linux-0.11.1;
 chmod +x ./calN50.js;
 ```
 
-3. Enumerate all the Shasta configs for all the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
+3. Enumerate all Shasta configurations for the data and use `calN50` to calculate `NG50`, use `yak` to calculate `yak QV score`.
 ```bash
 bash R9G4FAST_shasta_yak_NG50.sh;
 bash R9G4HAC_shasta_yak_NG50.sh;
@@ -88,4 +88,4 @@ To repeat our results, please install the aforementioned conda environment first
 bash ./run_all.sh;
 ```
 
-<mark>Shasta is a memory-intensive program. Please ensure you have at least 1 TB of physical RAM to successfully repeat our results.</mark>
+Shasta is a memory-intensive program. Please ensure you have at least 1 TB of physical RAM to successfully repeat our results.
