@@ -80,6 +80,8 @@ To run the Python scripts we provided, Python 3.7 or a higher version is require
 | seqtk | 1.3-r106 |
 | Shasta | 0.11.1 |
 | yak | 0.1-r56 |
+| Python | 3.7.3 |
+| MATLAB | R2023a |
 
 
 
